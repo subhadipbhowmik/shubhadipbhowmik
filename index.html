@@ -4,14 +4,36 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bhowmik's Spot</title>
+
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="Portfolio of Shubhadip Bhowmik, a Software and Web Developer. Explore my professional work, coding projects, hobbies, and journey."
+    />
+    <meta
+      name="keywords"
+      content="Shubhadip Bhowmik, Software Developer, Web Developer, BCA, Chandigarh University, Programmer, Portfolio, Qurexo"
+    />
+    <meta name="author" content="Shubhadip Bhowmik" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Bhowmik's Spot | Shubhadip Bhowmik" />
+    <meta
+      property="og:description"
+      content="Portfolio of Shubhadip Bhowmik, a Software and Web Developer. Explore my professional work, coding projects, and journey."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://shubhadipbhowmik.vercel.app/" />
+
+    <title>Bhowmik's Spot - Software Developer Portfolio</title>
     <link rel="icon" href="./images/my cartoon avatar.png" />
 
     <!-- Luxury Professional Fonts: Playfair Display (Headings) & Montserrat (Body) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap"
       rel="stylesheet"
     />
 
@@ -52,12 +74,12 @@
       >
         <!-- Logo -->
         <a
-          class="flex font-serif font-bold items-center text-gray-900 gap-3 cursor-pointer"
+          class="flex font-serif font-semibold items-center text-gray-900 gap-3 cursor-pointer"
         >
-          <div class="p-2 bg-indigo-600 text-white rounded-lg shadow-md">
-            <i class="fa-solid fa-wand-magic-sparkles text-lg"></i>
+          <div class="p-2 bg-indigo-600 text-white rounded-lg shadow-sm">
+            <i class="fa-solid fa-code text-sm"></i>
           </div>
-          <span class="text-2xl tracking-tight">Bhowmik's Spot</span>
+          <span class="text-xl tracking-tight">Bhowmik's Spot</span>
         </a>
 
         <!-- Mobile Hamburger Button -->
@@ -65,7 +87,7 @@
           id="mobile-menu-btn"
           class="md:hidden block text-gray-600 hover:text-indigo-600 focus:outline-none transition-colors"
         >
-          <i class="fa-solid fa-bars text-2xl"></i>
+          <i class="fa-solid fa-bars text-xl"></i>
         </button>
 
         <!-- Navigation Links (Hidden on mobile by default) -->
@@ -74,7 +96,7 @@
           class="hidden w-full md:flex md:w-auto md:items-center mt-4 md:mt-0 flex-col md:flex-row gap-4 md:gap-0"
         >
           <nav
-            class="md:ml-auto flex flex-col md:flex-row items-center text-base justify-center font-medium w-full md:w-auto"
+            class="md:ml-auto flex flex-col md:flex-row items-center text-sm justify-center font-medium w-full md:w-auto"
           >
             <a
               class="md:mr-6 py-2 md:py-0 text-gray-500 hover:text-indigo-600 transition-colors w-full md:w-auto text-center tracking-wide"
@@ -89,11 +111,11 @@
             class="group w-full md:w-auto flex justify-center"
           >
             <button
-              class="inline-flex items-center justify-center w-full md:w-auto gap-2 bg-gray-50 border border-gray-200 py-2.5 px-5 focus:outline-none hover:bg-gray-100 hover:border-gray-300 transition-all rounded-lg text-sm font-semibold text-gray-700 uppercase tracking-wider shadow-sm"
+              class="inline-flex items-center justify-center w-full md:w-auto gap-2 bg-gray-50 border border-gray-200 py-2 px-4 focus:outline-none hover:bg-gray-100 hover:border-gray-300 transition-all rounded-md text-xs font-semibold text-gray-700 uppercase tracking-wider shadow-sm"
             >
               My YouTube
               <i
-                class="fa-brands fa-youtube text-red-600 text-lg group-hover:scale-110 transition-transform"
+                class="fa-brands fa-youtube text-red-600 text-base group-hover:scale-110 transition-transform"
               ></i>
             </button>
           </a>
@@ -104,15 +126,16 @@
     <!-- hero -->
     <section class="bg-white overflow-hidden">
       <div
-        class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center"
+        class="container mx-auto flex px-5 py-20 md:flex-row flex-col items-center"
       >
         <div
           class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0"
           data-aos="fade-right"
           data-aos-duration="1000"
         >
+          <!-- Shadow and border radius removed as requested -->
           <img
-            class="object-cover object-center rounded-2xl shadow-2xl shadow-indigo-100/60"
+            class="object-cover object-center"
             alt="hero"
             src="./images/hero img.png"
           />
@@ -123,28 +146,30 @@
           data-aos-duration="1000"
         >
           <h1
-            class="font-serif sm:text-5xl text-4xl mb-6 font-bold text-gray-900 tracking-tight leading-tight"
+            class="font-serif sm:text-4xl text-3xl mb-4 font-bold text-gray-900 tracking-tight leading-tight"
           >
             Welcome to Bhowmik's Spot
             <br class="hidden lg:inline-block" /><span
-              class="text-indigo-600 text-3xl sm:text-4xl mt-3 block italic font-medium"
+              class="text-indigo-600 text-2xl sm:text-3xl mt-2 block italic font-medium"
               >Ok, Let me Introduce;</span
             >
           </h1>
-          <p class="mb-8 leading-relaxed text-lg text-gray-600 font-medium">
-            My name is <b class="text-gray-900 font-bold">Shubhadip Bhowmik</b>.
-            I am basically from
-            <b class="text-gray-900 font-bold">East Medinipur, West Bengal</b>.
-            I have done my Secondary Education from Moyna Vivekananda
+          <p class="mb-8 leading-relaxed text-base text-gray-600">
+            My name is
+            <b class="text-gray-900 font-semibold">Shubhadip Bhowmik</b>. I am
+            basically from
+            <b class="text-gray-900 font-semibold"
+              >East Medinipur, West Bengal</b
+            >. I have done my Secondary Education from Moyna Vivekananda
             Vidyamandir and Higher Secondary education from CJSV. Currently, I
-            am studying in <b class="text-gray-900 font-bold">B.C.A</b> from
+            am studying in <b class="text-gray-900 font-semibold">B.C.A</b> from
             Chandigarh University. I like to explore things on internet and like
             to learn different things. I want to be a
-            <b class="text-gray-900 font-bold">Software Developer</b> in future.
-            I have a little knowledge about in
-            <b class="text-gray-900 font-bold">HTML, CSS, JS</b>...Apart from
-            those I like to study
-            <b class="text-gray-900 font-bold"
+            <b class="text-gray-900 font-semibold">Software Developer</b> in
+            future. I have a little knowledge about in
+            <b class="text-gray-900 font-semibold">HTML, CSS, JS</b>...Apart
+            from those I like to study
+            <b class="text-gray-900 font-semibold"
               >motivational books, listening stories, writing poems, hang-outs
               with friends</b
             >..
@@ -152,9 +177,9 @@
           <div class="flex flex-wrap justify-center md:justify-start gap-4">
             <a href="#connect">
               <button
-                class="inline-flex items-center gap-2 text-white bg-indigo-600 border-0 py-3.5 px-8 focus:outline-none hover:bg-indigo-700 hover:shadow-lg hover:shadow-indigo-200 transition-all rounded-xl text-base font-semibold uppercase tracking-wider"
+                class="inline-flex items-center gap-2 text-white bg-indigo-600 border-0 py-2.5 px-6 focus:outline-none hover:bg-indigo-700 hover:shadow-md hover:shadow-indigo-200 transition-all rounded-lg text-sm font-semibold uppercase tracking-wider"
               >
-                <i class="fa-solid fa-link text-lg"></i> All My Links
+                <i class="fa-solid fa-link text-base"></i> All My Links
               </button>
             </a>
             <a
@@ -162,9 +187,9 @@
               target="_blank"
             >
               <button
-                class="inline-flex items-center gap-2 text-gray-700 bg-gray-50 border border-gray-200 py-3.5 px-8 focus:outline-none hover:bg-gray-100 transition-all rounded-xl text-base font-semibold uppercase tracking-wider shadow-sm"
+                class="inline-flex items-center gap-2 text-gray-700 bg-gray-50 border border-gray-200 py-2.5 px-6 focus:outline-none hover:bg-gray-100 transition-all rounded-lg text-sm font-semibold uppercase tracking-wider shadow-sm"
               >
-                <i class="fa-brands fa-google text-lg"></i> Google me
+                <i class="fa-brands fa-google text-base"></i> Google me
               </button>
             </a>
           </div>
@@ -174,20 +199,18 @@
 
     <!-- my hobby -->
     <section class="bg-slate-50 border-y border-gray-100">
-      <div class="container px-5 py-24 mx-auto">
+      <div class="container px-5 py-20 mx-auto">
         <div
-          class="flex flex-wrap w-full mb-16 flex-col items-center text-center"
+          class="flex flex-wrap w-full mb-12 flex-col items-center text-center"
           data-aos="fade-up"
         >
           <h1
-            class="font-serif sm:text-4xl text-3xl font-bold mb-4 text-gray-900"
+            class="font-serif sm:text-3xl text-2xl font-bold mb-4 text-gray-900"
           >
             My Hobbies
           </h1>
-          <div class="h-1 w-20 bg-indigo-500 rounded mb-6"></div>
-          <p
-            class="lg:w-1/2 w-full leading-relaxed text-gray-500 text-lg font-medium"
-          >
+          <div class="h-1 w-16 bg-indigo-500 rounded mb-4"></div>
+          <p class="lg:w-1/2 w-full leading-relaxed text-gray-500 text-base">
             I always try to do what I love & I do with love what I wanna do. It
             gives me a lot of satisfiction & pleasure.
           </p>
@@ -200,17 +223,17 @@
             data-aos-delay="100"
           >
             <div
-              class="bg-white border border-gray-100 p-10 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 h-full"
+              class="bg-white border border-gray-100 p-8 rounded-xl shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 h-full"
             >
               <div
-                class="w-16 h-16 inline-flex items-center justify-center rounded-2xl bg-indigo-50 text-indigo-600 mb-6 shadow-inner"
+                class="w-12 h-12 inline-flex items-center justify-center rounded-xl bg-indigo-50 text-indigo-600 mb-5 shadow-inner"
               >
-                <i class="fa-solid fa-book-open text-3xl"></i>
+                <i class="fa-solid fa-book-open text-xl"></i>
               </div>
-              <h2 class="text-2xl text-gray-900 font-bold font-serif mb-3">
+              <h2 class="text-xl text-gray-900 font-semibold font-serif mb-2">
                 Reading Books
               </h2>
-              <p class="leading-relaxed text-gray-600 font-medium">
+              <p class="leading-relaxed text-gray-600 text-sm">
                 I like to study different types of books in my leisure time,
                 listening stories, writing poems.
               </p>
@@ -223,17 +246,17 @@
             data-aos-delay="200"
           >
             <div
-              class="bg-white border border-gray-100 p-10 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 h-full"
+              class="bg-white border border-gray-100 p-8 rounded-xl shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 h-full"
             >
               <div
-                class="w-16 h-16 inline-flex items-center justify-center rounded-2xl bg-indigo-50 text-indigo-600 mb-6 shadow-inner"
+                class="w-12 h-12 inline-flex items-center justify-center rounded-xl bg-indigo-50 text-indigo-600 mb-5 shadow-inner"
               >
-                <i class="fa-solid fa-pen-nib text-3xl"></i>
+                <i class="fa-solid fa-pen-nib text-xl"></i>
               </div>
-              <h2 class="text-2xl text-gray-900 font-bold font-serif mb-3">
+              <h2 class="text-xl text-gray-900 font-semibold font-serif mb-2">
                 Blogging
               </h2>
-              <p class="leading-relaxed text-gray-600 font-medium">
+              <p class="leading-relaxed text-gray-600 text-sm">
                 I am not a proffesional blogger but I try to share my experience
                 through my blog.
               </p>
@@ -246,17 +269,17 @@
             data-aos-delay="300"
           >
             <div
-              class="bg-white border border-gray-100 p-10 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 h-full"
+              class="bg-white border border-gray-100 p-8 rounded-xl shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 h-full"
             >
               <div
-                class="w-16 h-16 inline-flex items-center justify-center rounded-2xl bg-indigo-50 text-indigo-600 mb-6 shadow-inner"
+                class="w-12 h-12 inline-flex items-center justify-center rounded-xl bg-indigo-50 text-indigo-600 mb-5 shadow-inner"
               >
-                <i class="fa-solid fa-earth-americas text-3xl"></i>
+                <i class="fa-solid fa-earth-americas text-xl"></i>
               </div>
-              <h2 class="text-2xl text-gray-900 font-bold font-serif mb-3">
+              <h2 class="text-xl text-gray-900 font-semibold font-serif mb-2">
                 Apprise
               </h2>
-              <p class="leading-relaxed text-gray-600 font-medium">
+              <p class="leading-relaxed text-gray-600 text-sm">
                 I always try to be updated on different things such politics,
                 technology, events and so on.
               </p>
@@ -268,22 +291,20 @@
 
     <!-- my education  -->
     <section class="bg-white">
-      <div class="container px-5 py-24 mx-auto">
-        <div class="flex flex-col text-center w-full mb-16" data-aos="fade-up">
+      <div class="container px-5 py-20 mx-auto">
+        <div class="flex flex-col text-center w-full mb-12" data-aos="fade-up">
           <h1
-            class="text-sm text-indigo-500 tracking-widest font-bold mb-2 uppercase"
+            class="text-xs text-indigo-500 tracking-widest font-semibold mb-2 uppercase"
           >
             Journey
           </h1>
           <h2
-            class="font-serif sm:text-4xl text-3xl font-bold mb-4 text-gray-900"
+            class="font-serif sm:text-3xl text-2xl font-bold mb-4 text-gray-900"
           >
             My Education
           </h2>
-          <div class="h-1 w-20 bg-indigo-500 rounded mb-6 mx-auto"></div>
-          <p
-            class="lg:w-2/3 mx-auto leading-relaxed text-lg text-gray-500 font-medium"
-          >
+          <div class="h-1 w-16 bg-indigo-500 rounded mb-4 mx-auto"></div>
+          <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-500">
             I am an average student. But I never compare myself with anyone. I
             don't have any regret because I always try to give my 100% effort.
             Memory of my school life will always stick up in the core of my
@@ -295,23 +316,23 @@
           <!-- school 1 -->
           <div class="p-4 lg:w-1/2" data-aos="fade-up" data-aos-delay="100">
             <div
-              class="h-full bg-slate-50 rounded-2xl p-6 sm:p-8 flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left border border-gray-100 hover:shadow-lg transition-shadow duration-300"
+              class="h-full bg-slate-50 rounded-xl p-6 sm:p-8 flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left border border-gray-100 hover:shadow-md transition-shadow duration-300"
             >
               <img
                 alt="Nivedita Sishu Siksha Niketan"
-                class="flex-shrink-0 rounded-2xl w-32 h-32 sm:w-48 sm:h-48 object-cover object-center shadow-md sm:mb-0 mb-6"
+                class="flex-shrink-0 rounded-xl w-32 h-32 sm:w-40 sm:h-40 object-cover object-center shadow-sm sm:mb-0 mb-6"
                 src="./schools/nivedita.jpg"
               />
               <div class="flex-grow sm:pl-8">
-                <h2 class="font-serif font-bold text-2xl text-gray-900">
+                <h2 class="font-serif font-semibold text-xl text-gray-900">
                   Nivedita Sishu Siksha Niketan
                 </h2>
                 <h3
-                  class="text-indigo-600 font-semibold text-sm tracking-wide uppercase mb-3 mt-2"
+                  class="text-indigo-600 font-medium text-xs tracking-wide uppercase mb-2 mt-1"
                 >
                   Primary Education
                 </h3>
-                <p class="text-gray-600 leading-relaxed text-sm font-medium">
+                <p class="text-gray-600 leading-relaxed text-sm">
                   I have completed my Primary Education from here. Those days
                   are just insane. Lots of memories. Wake up at dawn, go
                   throughby rikshaw, playing kabaddi in the roof. I can even
@@ -324,23 +345,23 @@
           <!-- school 2 -->
           <div class="p-4 lg:w-1/2" data-aos="fade-up" data-aos-delay="200">
             <div
-              class="h-full bg-slate-50 rounded-2xl p-6 sm:p-8 flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left border border-gray-100 hover:shadow-lg transition-shadow duration-300"
+              class="h-full bg-slate-50 rounded-xl p-6 sm:p-8 flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left border border-gray-100 hover:shadow-md transition-shadow duration-300"
             >
               <img
                 alt="Moyna Vivekananda Vidyamandir"
-                class="flex-shrink-0 rounded-2xl w-32 h-32 sm:w-48 sm:h-48 object-cover object-center shadow-md sm:mb-0 mb-6"
+                class="flex-shrink-0 rounded-xl w-32 h-32 sm:w-40 sm:h-40 object-cover object-center shadow-sm sm:mb-0 mb-6"
                 src="./schools/moyna.png"
               />
               <div class="flex-grow sm:pl-8">
-                <h2 class="font-serif font-bold text-2xl text-gray-900">
+                <h2 class="font-serif font-semibold text-xl text-gray-900">
                   Moyna Vivekananda Vidyamandir
                 </h2>
                 <h3
-                  class="text-indigo-600 font-semibold text-sm tracking-wide uppercase mb-3 mt-2"
+                  class="text-indigo-600 font-medium text-xs tracking-wide uppercase mb-2 mt-1"
                 >
                   Secondary Education
                 </h3>
-                <p class="text-gray-600 leading-relaxed text-sm font-medium">
+                <p class="text-gray-600 leading-relaxed text-sm">
                   First of all I am very sorry, because I am unable to express
                   that about my memories and moments in this school. I got lots
                   of love and objurgation from my beloved sir and madams. Name
@@ -353,23 +374,23 @@
           <!-- school 3 -->
           <div class="p-4 lg:w-1/2" data-aos="fade-up" data-aos-delay="100">
             <div
-              class="h-full bg-slate-50 rounded-2xl p-6 sm:p-8 flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left border border-gray-100 hover:shadow-lg transition-shadow duration-300"
+              class="h-full bg-slate-50 rounded-xl p-6 sm:p-8 flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left border border-gray-100 hover:shadow-md transition-shadow duration-300"
             >
               <img
                 alt="Changrachak Jagadish Smriti Vidyapith"
-                class="flex-shrink-0 rounded-2xl w-32 h-32 sm:w-48 sm:h-48 object-cover object-center shadow-md sm:mb-0 mb-6"
+                class="flex-shrink-0 rounded-xl w-32 h-32 sm:w-40 sm:h-40 object-cover object-center shadow-sm sm:mb-0 mb-6"
                 src="./schools/cjsv.jpg"
               />
               <div class="flex-grow sm:pl-8">
-                <h2 class="font-serif font-bold text-2xl text-gray-900">
+                <h2 class="font-serif font-semibold text-xl text-gray-900">
                   Changrachak Jagadish Smriti Vidyapith
                 </h2>
                 <h3
-                  class="text-indigo-600 font-semibold text-sm tracking-wide uppercase mb-3 mt-2"
+                  class="text-indigo-600 font-medium text-xs tracking-wide uppercase mb-2 mt-1"
                 >
                   Higher Secondary Education
                 </h3>
-                <p class="text-gray-600 leading-relaxed text-sm font-medium">
+                <p class="text-gray-600 leading-relaxed text-sm">
                   It was the first time I was studying far away from my home. A
                   new experiencein hostel life and new friends to get good
                   exposure. Overall a good memory.
@@ -380,25 +401,23 @@
           <!-- college 1 -->
           <div class="p-4 lg:w-1/2" data-aos="fade-up" data-aos-delay="200">
             <div
-              class="h-full bg-slate-50 rounded-2xl p-6 sm:p-8 flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left border border-gray-100 hover:shadow-lg transition-shadow duration-300"
+              class="h-full bg-slate-50 rounded-xl p-6 sm:p-8 flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left border border-gray-100 hover:shadow-md transition-shadow duration-300"
             >
               <img
                 alt="Chandigarh University"
-                class="flex-shrink-0 rounded-2xl w-32 h-32 sm:w-48 sm:h-48 object-cover object-center shadow-md sm:mb-0 mb-6"
+                class="flex-shrink-0 rounded-xl w-32 h-32 sm:w-40 sm:h-40 object-cover object-center shadow-sm sm:mb-0 mb-6"
                 src="./schools/chandigarh.webp"
               />
               <div class="flex-grow sm:pl-8">
-                <h2 class="font-serif font-bold text-2xl text-gray-900">
+                <h2 class="font-serif font-semibold text-xl text-gray-900">
                   Chandigarh University
                 </h2>
                 <h3
-                  class="text-indigo-600 font-semibold text-sm tracking-wide uppercase mb-3 mt-2"
+                  class="text-indigo-600 font-medium text-xs tracking-wide uppercase mb-2 mt-1"
                 >
                   College
                 </h3>
-                <p
-                  class="text-gray-600 leading-relaxed text-sm mb-4 font-medium"
-                >
+                <p class="text-gray-600 leading-relaxed text-sm mb-4">
                   Currently I have taken admission here for my B.C.A. I am very
                   excited for physically meet and interact with my new buddy and
                   faculties.
@@ -407,22 +426,22 @@
                   class="inline-flex gap-3 justify-center sm:justify-start w-full"
                 >
                   <a
-                    class="text-gray-500 hover:text-blue-600 transition-colors bg-white p-2 rounded-lg shadow-sm border border-gray-100 flex items-center justify-center w-10 h-10"
+                    class="text-gray-500 hover:text-blue-600 transition-colors bg-white p-2 rounded-md shadow-sm border border-gray-100 flex items-center justify-center w-8 h-8"
                     href="https://www.facebook.com/chandigarhuniversitygharuan/"
                   >
-                    <i class="fa-brands fa-facebook-f text-lg"></i>
+                    <i class="fa-brands fa-facebook-f text-sm"></i>
                   </a>
                   <a
-                    class="text-gray-500 hover:text-black transition-colors bg-white p-2 rounded-lg shadow-sm border border-gray-100 flex items-center justify-center w-10 h-10"
+                    class="text-gray-500 hover:text-black transition-colors bg-white p-2 rounded-md shadow-sm border border-gray-100 flex items-center justify-center w-8 h-8"
                     href="https://twitter.com/Chandigarh_uni"
                   >
-                    <i class="fa-brands fa-x-twitter text-lg"></i>
+                    <i class="fa-brands fa-x-twitter text-sm"></i>
                   </a>
                   <a
-                    class="text-gray-500 hover:text-indigo-600 transition-colors bg-white p-2 rounded-lg shadow-sm border border-gray-100 flex items-center justify-center w-10 h-10"
+                    class="text-gray-500 hover:text-indigo-600 transition-colors bg-white p-2 rounded-md shadow-sm border border-gray-100 flex items-center justify-center w-8 h-8"
                     href="https://www.cuchd.in/"
                   >
-                    <i class="fa-solid fa-globe text-lg"></i>
+                    <i class="fa-solid fa-globe text-sm"></i>
                   </a>
                 </span>
               </div>
@@ -434,22 +453,20 @@
 
     <!-- my certificates -->
     <section class="bg-slate-50 border-y border-gray-100">
-      <div class="container px-5 py-24 mx-auto flex flex-wrap">
+      <div class="container px-5 py-20 mx-auto flex flex-wrap">
         <div
-          class="flex w-full mb-16 flex-col md:flex-row md:items-end"
+          class="flex w-full mb-12 flex-col md:flex-row md:items-end"
           data-aos="fade-up"
         >
           <div class="md:w-1/3">
             <h1
-              class="font-serif sm:text-4xl text-3xl font-bold text-gray-900 mb-4 md:mb-2"
+              class="font-serif sm:text-3xl text-2xl font-bold text-gray-900 mb-3 md:mb-2"
             >
               Small Achievements
             </h1>
-            <div class="h-1 w-20 bg-indigo-500 rounded mb-4 md:mb-0"></div>
+            <div class="h-1 w-16 bg-indigo-500 rounded mb-4 md:mb-0"></div>
           </div>
-          <p
-            class="md:w-2/3 md:pl-8 leading-relaxed text-lg text-gray-500 font-medium"
-          >
+          <p class="md:w-2/3 md:pl-8 leading-relaxed text-base text-gray-500">
             As a student I always have a learning attitude. I am hunger of
             information and appreciation. I try my best to achieve what I wanna
             achieve. I am the competetor of myself.
@@ -458,70 +475,70 @@
         <div class="flex flex-wrap md:-m-2 -m-1">
           <div class="flex flex-wrap w-1/2">
             <div
-              class="md:p-2 p-1 w-1/2 overflow-hidden rounded-xl"
+              class="md:p-2 p-1 w-1/2 overflow-hidden rounded-lg"
               data-aos="zoom-in"
               data-aos-delay="100"
             >
               <img
                 alt="gallery"
-                class="w-full h-full object-cover object-center block rounded-xl hover:scale-105 transition-transform duration-500 cursor-pointer"
+                class="w-full h-full object-cover object-center block rounded-lg hover:scale-105 transition-transform duration-500 cursor-pointer"
                 src="./certificates/britti 1.jpg"
               />
             </div>
             <div
-              class="md:p-2 p-1 w-1/2 overflow-hidden rounded-xl"
+              class="md:p-2 p-1 w-1/2 overflow-hidden rounded-lg"
               data-aos="zoom-in"
               data-aos-delay="200"
             >
               <img
                 alt="gallery"
-                class="w-full h-full object-cover object-center block rounded-xl hover:scale-105 transition-transform duration-500 cursor-pointer"
+                class="w-full h-full object-cover object-center block rounded-lg hover:scale-105 transition-transform duration-500 cursor-pointer"
                 src="./certificates/britti 2.jpg"
               />
             </div>
             <div
-              class="md:p-2 p-1 w-full overflow-hidden rounded-xl"
+              class="md:p-2 p-1 w-full overflow-hidden rounded-lg"
               data-aos="zoom-in"
               data-aos-delay="300"
             >
               <img
                 alt="gallery"
-                class="w-full h-full object-cover object-center block rounded-xl hover:scale-105 transition-transform duration-500 cursor-pointer"
+                class="w-full h-full object-cover object-center block rounded-lg hover:scale-105 transition-transform duration-500 cursor-pointer"
                 src="./certificates/britti 3.jpg"
               />
             </div>
           </div>
           <div class="flex flex-wrap w-1/2">
             <div
-              class="md:p-2 p-1 w-full overflow-hidden rounded-xl"
+              class="md:p-2 p-1 w-full overflow-hidden rounded-lg"
               data-aos="zoom-in"
               data-aos-delay="400"
             >
               <img
                 alt="gallery"
-                class="w-full h-full object-cover object-center block rounded-xl hover:scale-105 transition-transform duration-500 cursor-pointer"
+                class="w-full h-full object-cover object-center block rounded-lg hover:scale-105 transition-transform duration-500 cursor-pointer"
                 src="./certificates/britti 4.jpg"
               />
             </div>
             <div
-              class="md:p-2 p-1 w-1/2 overflow-hidden rounded-xl"
+              class="md:p-2 p-1 w-1/2 overflow-hidden rounded-lg"
               data-aos="zoom-in"
               data-aos-delay="500"
             >
               <img
                 alt="gallery"
-                class="w-full h-full object-cover object-center block rounded-xl hover:scale-105 transition-transform duration-500 cursor-pointer"
+                class="w-full h-full object-cover object-center block rounded-lg hover:scale-105 transition-transform duration-500 cursor-pointer"
                 src="./certificates/Madhyamik Certificate.png"
               />
             </div>
             <div
-              class="md:p-2 p-1 w-1/2 overflow-hidden rounded-xl"
+              class="md:p-2 p-1 w-1/2 overflow-hidden rounded-lg"
               data-aos="zoom-in"
               data-aos-delay="600"
             >
               <img
                 alt="gallery"
-                class="w-full h-full object-cover object-center block rounded-xl hover:scale-105 transition-transform duration-500 cursor-pointer"
+                class="w-full h-full object-cover object-center block rounded-lg hover:scale-105 transition-transform duration-500 cursor-pointer"
                 src="./certificates/WBHS CERTIFICATE.jpg"
               />
             </div>
@@ -532,48 +549,45 @@
 
     <!-- NEW SECTION: Favourite Quotes -->
     <section class="bg-white border-b border-gray-100">
-      <div class="container px-5 py-24 mx-auto">
-        <div class="flex flex-col text-center w-full mb-16" data-aos="fade-up">
+      <div class="container px-5 py-20 mx-auto">
+        <div class="flex flex-col text-center w-full mb-12" data-aos="fade-up">
           <h1
-            class="text-sm text-indigo-500 tracking-widest font-bold mb-2 uppercase"
+            class="text-xs text-indigo-500 tracking-widest font-semibold mb-2 uppercase"
           >
             Inspiration
           </h1>
           <h2
-            class="font-serif sm:text-4xl text-3xl font-bold mb-4 text-gray-900"
+            class="font-serif sm:text-3xl text-2xl font-bold mb-4 text-gray-900"
           >
             My Favourite Quotes
           </h2>
-          <div class="h-1 w-20 bg-indigo-500 rounded mb-6 mx-auto"></div>
-          <p
-            class="lg:w-2/3 mx-auto leading-relaxed text-lg text-gray-500 font-medium"
-          >
+          <div class="h-1 w-16 bg-indigo-500 rounded mb-4 mx-auto"></div>
+          <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-500">
             Thoughts and philosophy on Computer Science, Life, and Building the
             Future.
           </p>
         </div>
 
-        <!-- CSS Grid for Quotes to prevent any horizontal overflow -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <!-- Quote 1 -->
           <div
-            class="bg-slate-50 border border-gray-100 p-10 rounded-2xl relative hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+            class="bg-slate-50 border border-gray-100 p-8 rounded-xl relative hover:shadow-md hover:-translate-y-1 transition-all duration-300"
             data-aos="fade-up"
             data-aos-delay="100"
           >
             <i
-              class="fa-solid fa-quote-right text-4xl text-indigo-100 absolute top-6 right-6"
+              class="fa-solid fa-quote-right text-3xl text-indigo-100 absolute top-5 right-5"
             ></i>
             <p
-              class="font-serif text-gray-700 italic text-xl leading-relaxed mb-6 mt-4 z-10 relative"
+              class="font-serif text-gray-700 italic text-lg leading-relaxed mb-5 mt-2 z-10 relative"
             >
               "Programs must be written for people to read, and only
               incidentally for machines to execute."
             </p>
             <div class="flex items-center mt-auto">
-              <div class="h-10 w-1 bg-indigo-500 rounded-full mr-4"></div>
+              <div class="h-8 w-1 bg-indigo-500 rounded-full mr-3"></div>
               <h3
-                class="font-bold text-gray-900 uppercase tracking-wide text-sm"
+                class="font-semibold text-gray-900 uppercase tracking-wide text-xs"
               >
                 Harold Abelson
               </h3>
@@ -582,22 +596,22 @@
 
           <!-- Quote 2 -->
           <div
-            class="bg-slate-50 border border-gray-100 p-10 rounded-2xl relative hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+            class="bg-slate-50 border border-gray-100 p-8 rounded-xl relative hover:shadow-md hover:-translate-y-1 transition-all duration-300"
             data-aos="fade-up"
             data-aos-delay="200"
           >
             <i
-              class="fa-solid fa-quote-right text-4xl text-indigo-100 absolute top-6 right-6"
+              class="fa-solid fa-quote-right text-3xl text-indigo-100 absolute top-5 right-5"
             ></i>
             <p
-              class="font-serif text-gray-700 italic text-xl leading-relaxed mb-6 mt-4 z-10 relative"
+              class="font-serif text-gray-700 italic text-lg leading-relaxed mb-5 mt-2 z-10 relative"
             >
               "Talk is cheap. Show me the code."
             </p>
             <div class="flex items-center mt-auto">
-              <div class="h-10 w-1 bg-indigo-500 rounded-full mr-4"></div>
+              <div class="h-8 w-1 bg-indigo-500 rounded-full mr-3"></div>
               <h3
-                class="font-bold text-gray-900 uppercase tracking-wide text-sm"
+                class="font-semibold text-gray-900 uppercase tracking-wide text-xs"
               >
                 Linus Torvalds
               </h3>
@@ -606,22 +620,22 @@
 
           <!-- Quote 3 -->
           <div
-            class="bg-slate-50 border border-gray-100 p-10 rounded-2xl relative hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+            class="bg-slate-50 border border-gray-100 p-8 rounded-xl relative hover:shadow-md hover:-translate-y-1 transition-all duration-300"
             data-aos="fade-up"
             data-aos-delay="300"
           >
             <i
-              class="fa-solid fa-quote-right text-4xl text-indigo-100 absolute top-6 right-6"
+              class="fa-solid fa-quote-right text-3xl text-indigo-100 absolute top-5 right-5"
             ></i>
             <p
-              class="font-serif text-gray-700 italic text-xl leading-relaxed mb-6 mt-4 z-10 relative"
+              class="font-serif text-gray-700 italic text-lg leading-relaxed mb-5 mt-2 z-10 relative"
             >
               "The only way to do great work is to love what you do."
             </p>
             <div class="flex items-center mt-auto">
-              <div class="h-10 w-1 bg-indigo-500 rounded-full mr-4"></div>
+              <div class="h-8 w-1 bg-indigo-500 rounded-full mr-3"></div>
               <h3
-                class="font-bold text-gray-900 uppercase tracking-wide text-sm"
+                class="font-semibold text-gray-900 uppercase tracking-wide text-xs"
               >
                 Steve Jobs
               </h3>
@@ -630,23 +644,23 @@
 
           <!-- Quote 4 -->
           <div
-            class="bg-slate-50 border border-gray-100 p-10 rounded-2xl relative hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+            class="bg-slate-50 border border-gray-100 p-8 rounded-xl relative hover:shadow-md hover:-translate-y-1 transition-all duration-300"
             data-aos="fade-up"
             data-aos-delay="400"
           >
             <i
-              class="fa-solid fa-quote-right text-4xl text-indigo-100 absolute top-6 right-6"
+              class="fa-solid fa-quote-right text-3xl text-indigo-100 absolute top-5 right-5"
             ></i>
             <p
-              class="font-serif text-gray-700 italic text-xl leading-relaxed mb-6 mt-4 z-10 relative"
+              class="font-serif text-gray-700 italic text-lg leading-relaxed mb-5 mt-2 z-10 relative"
             >
               "Any fool can write code that a computer can understand. Good
               programmers write code that humans can understand."
             </p>
             <div class="flex items-center mt-auto">
-              <div class="h-10 w-1 bg-indigo-500 rounded-full mr-4"></div>
+              <div class="h-8 w-1 bg-indigo-500 rounded-full mr-3"></div>
               <h3
-                class="font-bold text-gray-900 uppercase tracking-wide text-sm"
+                class="font-semibold text-gray-900 uppercase tracking-wide text-xs"
               >
                 Martin Fowler
               </h3>
@@ -655,23 +669,23 @@
 
           <!-- Quote 5 -->
           <div
-            class="bg-slate-50 border border-gray-100 p-10 rounded-2xl relative hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+            class="bg-slate-50 border border-gray-100 p-8 rounded-xl relative hover:shadow-md hover:-translate-y-1 transition-all duration-300"
             data-aos="fade-up"
             data-aos-delay="500"
           >
             <i
-              class="fa-solid fa-quote-right text-4xl text-indigo-100 absolute top-6 right-6"
+              class="fa-solid fa-quote-right text-3xl text-indigo-100 absolute top-5 right-5"
             ></i>
             <p
-              class="font-serif text-gray-700 italic text-xl leading-relaxed mb-6 mt-4 z-10 relative"
+              class="font-serif text-gray-700 italic text-lg leading-relaxed mb-5 mt-2 z-10 relative"
             >
               "The best time to plant a tree was 20 years ago. The second best
               time is now."
             </p>
             <div class="flex items-center mt-auto">
-              <div class="h-10 w-1 bg-indigo-500 rounded-full mr-4"></div>
+              <div class="h-8 w-1 bg-indigo-500 rounded-full mr-3"></div>
               <h3
-                class="font-bold text-gray-900 uppercase tracking-wide text-sm"
+                class="font-semibold text-gray-900 uppercase tracking-wide text-xs"
               >
                 Chinese Proverb
               </h3>
@@ -680,22 +694,22 @@
 
           <!-- Quote 6 -->
           <div
-            class="bg-slate-50 border border-gray-100 p-10 rounded-2xl relative hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+            class="bg-slate-50 border border-gray-100 p-8 rounded-xl relative hover:shadow-md hover:-translate-y-1 transition-all duration-300"
             data-aos="fade-up"
             data-aos-delay="600"
           >
             <i
-              class="fa-solid fa-quote-right text-4xl text-indigo-100 absolute top-6 right-6"
+              class="fa-solid fa-quote-right text-3xl text-indigo-100 absolute top-5 right-5"
             ></i>
             <p
-              class="font-serif text-gray-700 italic text-xl leading-relaxed mb-6 mt-4 z-10 relative"
+              class="font-serif text-gray-700 italic text-lg leading-relaxed mb-5 mt-2 z-10 relative"
             >
               "Stay hungry, stay foolish."
             </p>
             <div class="flex items-center mt-auto">
-              <div class="h-10 w-1 bg-indigo-500 rounded-full mr-4"></div>
+              <div class="h-8 w-1 bg-indigo-500 rounded-full mr-3"></div>
               <h3
-                class="font-bold text-gray-900 uppercase tracking-wide text-sm"
+                class="font-semibold text-gray-900 uppercase tracking-wide text-xs"
               >
                 Stewart Brand
               </h3>
@@ -707,17 +721,15 @@
 
     <!-- friends -->
     <section class="bg-slate-50 border-b border-gray-100">
-      <div class="container px-5 py-24 mx-auto">
-        <div class="flex flex-col text-center w-full mb-16" data-aos="fade-up">
+      <div class="container px-5 py-20 mx-auto">
+        <div class="flex flex-col text-center w-full mb-12" data-aos="fade-up">
           <h1
-            class="font-serif sm:text-4xl text-3xl font-bold mb-4 text-gray-900"
+            class="font-serif sm:text-3xl text-2xl font-bold mb-4 text-gray-900"
           >
             Meet My Friends ❤️
           </h1>
-          <div class="h-1 w-20 bg-indigo-500 rounded mb-6 mx-auto"></div>
-          <p
-            class="lg:w-2/3 mx-auto leading-relaxed text-lg text-gray-500 font-medium"
-          >
+          <div class="h-1 w-16 bg-indigo-500 rounded mb-4 mx-auto"></div>
+          <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-500">
             Maybe that the radius of my friend circle is not well extended but
             according to centrifugal force in physics if the radius is small
             then the power of centrifugal force will be increased. They always
@@ -732,19 +744,19 @@
             data-aos-delay="50"
           >
             <div
-              class="h-full flex items-center bg-white border-gray-100 shadow-sm border p-4 rounded-2xl hover:shadow-md hover:-translate-y-1 transition-all duration-300"
+              class="h-full flex items-center bg-white border-gray-100 shadow-sm border p-4 rounded-xl hover:shadow-md hover:-translate-y-1 transition-all duration-300"
             >
               <img
                 alt="Bama"
-                class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 shadow-sm"
+                class="w-14 h-14 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 shadow-sm"
                 src="./images/bama.jpg"
               />
               <div class="flex-grow">
-                <h2 class="text-gray-900 font-bold font-serif text-lg">
+                <h2 class="text-gray-900 font-semibold font-serif text-base">
                   Bama Charan Chhandogi
                 </h2>
                 <p
-                  class="text-indigo-500 text-sm font-semibold tracking-wide uppercase mt-1"
+                  class="text-indigo-500 text-xs font-semibold tracking-wide uppercase mt-1"
                 >
                   Engineer
                 </p>
@@ -757,19 +769,19 @@
             data-aos-delay="100"
           >
             <div
-              class="h-full flex items-center bg-white border-gray-100 shadow-sm border p-4 rounded-2xl hover:shadow-md hover:-translate-y-1 transition-all duration-300"
+              class="h-full flex items-center bg-white border-gray-100 shadow-sm border p-4 rounded-xl hover:shadow-md hover:-translate-y-1 transition-all duration-300"
             >
               <img
                 alt="Sandipan"
-                class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 shadow-sm"
+                class="w-14 h-14 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 shadow-sm"
                 src="./images/sandipan.png"
               />
               <div class="flex-grow">
-                <h2 class="text-gray-900 font-bold font-serif text-lg">
+                <h2 class="text-gray-900 font-semibold font-serif text-base">
                   Sandipan Bera
                 </h2>
                 <p
-                  class="text-indigo-500 text-sm font-semibold tracking-wide uppercase mt-1"
+                  class="text-indigo-500 text-xs font-semibold tracking-wide uppercase mt-1"
                 >
                   Agriculturist
                 </p>
@@ -782,19 +794,19 @@
             data-aos-delay="150"
           >
             <div
-              class="h-full flex items-center bg-white border-gray-100 shadow-sm border p-4 rounded-2xl hover:shadow-md hover:-translate-y-1 transition-all duration-300"
+              class="h-full flex items-center bg-white border-gray-100 shadow-sm border p-4 rounded-xl hover:shadow-md hover:-translate-y-1 transition-all duration-300"
             >
               <img
                 alt="Nanda"
-                class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 shadow-sm"
+                class="w-14 h-14 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 shadow-sm"
                 src="./images/nanda.jpg"
               />
               <div class="flex-grow">
-                <h2 class="text-gray-900 font-bold font-serif text-lg">
+                <h2 class="text-gray-900 font-semibold font-serif text-base">
                   Nanda Dulal Das
                 </h2>
                 <p
-                  class="text-indigo-500 text-sm font-semibold tracking-wide uppercase mt-1"
+                  class="text-indigo-500 text-xs font-semibold tracking-wide uppercase mt-1"
                 >
                   Doctor
                 </p>
@@ -808,19 +820,19 @@
             data-aos-delay="50"
           >
             <div
-              class="h-full flex items-center bg-white border-gray-100 shadow-sm border p-4 rounded-2xl hover:shadow-md hover:-translate-y-1 transition-all duration-300"
+              class="h-full flex items-center bg-white border-gray-100 shadow-sm border p-4 rounded-xl hover:shadow-md hover:-translate-y-1 transition-all duration-300"
             >
               <img
                 alt="Swastika"
-                class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 shadow-sm"
+                class="w-14 h-14 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 shadow-sm"
                 src="./images/swastika.jpg"
               />
               <div class="flex-grow">
-                <h2 class="text-gray-900 font-bold font-serif text-lg">
+                <h2 class="text-gray-900 font-semibold font-serif text-base">
                   Swastika Maity
                 </h2>
                 <p
-                  class="text-indigo-500 text-sm font-semibold tracking-wide uppercase mt-1"
+                  class="text-indigo-500 text-xs font-semibold tracking-wide uppercase mt-1"
                 >
                   Agriculturist
                 </p>
@@ -833,19 +845,19 @@
             data-aos-delay="100"
           >
             <div
-              class="h-full flex items-center bg-white border-gray-100 shadow-sm border p-4 rounded-2xl hover:shadow-md hover:-translate-y-1 transition-all duration-300"
+              class="h-full flex items-center bg-white border-gray-100 shadow-sm border p-4 rounded-xl hover:shadow-md hover:-translate-y-1 transition-all duration-300"
             >
               <img
                 alt="Daliya"
-                class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 shadow-sm"
+                class="w-14 h-14 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 shadow-sm"
                 src="./images/daliya.png"
               />
               <div class="flex-grow">
-                <h2 class="text-gray-900 font-bold font-serif text-lg">
+                <h2 class="text-gray-900 font-semibold font-serif text-base">
                   Daliya Roy ❤️
                 </h2>
                 <p
-                  class="text-indigo-500 text-sm font-semibold tracking-wide uppercase mt-1"
+                  class="text-indigo-500 text-xs font-semibold tracking-wide uppercase mt-1"
                 >
                   Athlete
                 </p>
@@ -858,19 +870,19 @@
             data-aos-delay="150"
           >
             <div
-              class="h-full flex items-center bg-white border-gray-100 shadow-sm border p-4 rounded-2xl hover:shadow-md hover:-translate-y-1 transition-all duration-300"
+              class="h-full flex items-center bg-white border-gray-100 shadow-sm border p-4 rounded-xl hover:shadow-md hover:-translate-y-1 transition-all duration-300"
             >
               <img
                 alt="Sayak"
-                class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 shadow-sm"
+                class="w-14 h-14 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 shadow-sm"
                 src="./images/sayak.jpg"
               />
               <div class="flex-grow">
-                <h2 class="text-gray-900 font-bold font-serif text-lg">
+                <h2 class="text-gray-900 font-semibold font-serif text-base">
                   Sayak Maity
                 </h2>
                 <p
-                  class="text-indigo-500 text-sm font-semibold tracking-wide uppercase mt-1"
+                  class="text-indigo-500 text-xs font-semibold tracking-wide uppercase mt-1"
                 >
                   Engineer
                 </p>
@@ -884,19 +896,19 @@
             data-aos-delay="50"
           >
             <div
-              class="h-full flex items-center bg-white border-gray-100 shadow-sm border p-4 rounded-2xl hover:shadow-md hover:-translate-y-1 transition-all duration-300"
+              class="h-full flex items-center bg-white border-gray-100 shadow-sm border p-4 rounded-xl hover:shadow-md hover:-translate-y-1 transition-all duration-300"
             >
               <img
                 alt="Sourav"
-                class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 shadow-sm"
+                class="w-14 h-14 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 shadow-sm"
                 src="./images/sourav.jpg"
               />
               <div class="flex-grow">
-                <h2 class="text-gray-900 font-bold font-serif text-lg">
+                <h2 class="text-gray-900 font-semibold font-serif text-base">
                   Sourav Jana
                 </h2>
                 <p
-                  class="text-indigo-500 text-sm font-semibold tracking-wide uppercase mt-1"
+                  class="text-indigo-500 text-xs font-semibold tracking-wide uppercase mt-1"
                 >
                   Doctor
                 </p>
@@ -909,19 +921,19 @@
             data-aos-delay="100"
           >
             <div
-              class="h-full flex items-center bg-white border-gray-100 shadow-sm border p-4 rounded-2xl hover:shadow-md hover:-translate-y-1 transition-all duration-300"
+              class="h-full flex items-center bg-white border-gray-100 shadow-sm border p-4 rounded-xl hover:shadow-md hover:-translate-y-1 transition-all duration-300"
             >
               <img
                 alt="Sudipta"
-                class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 shadow-sm"
+                class="w-14 h-14 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 shadow-sm"
                 src="./images/sudipta.jpg"
               />
               <div class="flex-grow">
-                <h2 class="text-gray-900 font-bold font-serif text-lg">
+                <h2 class="text-gray-900 font-semibold font-serif text-base">
                   Sudipta Adhikari
                 </h2>
                 <p
-                  class="text-indigo-500 text-sm font-semibold tracking-wide uppercase mt-1"
+                  class="text-indigo-500 text-xs font-semibold tracking-wide uppercase mt-1"
                 >
                   Agriculturist
                 </p>
@@ -934,19 +946,19 @@
             data-aos-delay="150"
           >
             <div
-              class="h-full flex items-center bg-white border-gray-100 shadow-sm border p-4 rounded-2xl hover:shadow-md hover:-translate-y-1 transition-all duration-300"
+              class="h-full flex items-center bg-white border-gray-100 shadow-sm border p-4 rounded-xl hover:shadow-md hover:-translate-y-1 transition-all duration-300"
             >
               <img
                 alt="uday"
-                class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 shadow-sm"
+                class="w-14 h-14 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 shadow-sm"
                 src="./images/uday.jpg"
               />
               <div class="flex-grow">
-                <h2 class="text-gray-900 font-bold font-serif text-lg">
+                <h2 class="text-gray-900 font-semibold font-serif text-base">
                   Uday Mura
                 </h2>
                 <p
-                  class="text-indigo-500 text-sm font-semibold tracking-wide uppercase mt-1"
+                  class="text-indigo-500 text-xs font-semibold tracking-wide uppercase mt-1"
                 >
                   Doctor
                 </p>
@@ -960,19 +972,19 @@
             data-aos-delay="50"
           >
             <div
-              class="h-full flex items-center bg-white border-gray-100 shadow-sm border p-4 rounded-2xl hover:shadow-md hover:-translate-y-1 transition-all duration-300"
+              class="h-full flex items-center bg-white border-gray-100 shadow-sm border p-4 rounded-xl hover:shadow-md hover:-translate-y-1 transition-all duration-300"
             >
               <img
                 alt="Anupam"
-                class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 shadow-sm"
+                class="w-14 h-14 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 shadow-sm"
                 src="./images/anupam.jpg"
               />
               <div class="flex-grow">
-                <h2 class="text-gray-900 font-bold font-serif text-lg">
+                <h2 class="text-gray-900 font-semibold font-serif text-base">
                   Anupam Sen
                 </h2>
                 <p
-                  class="text-indigo-500 text-sm font-semibold tracking-wide uppercase mt-1"
+                  class="text-indigo-500 text-xs font-semibold tracking-wide uppercase mt-1"
                 >
                   WBCS Officer
                 </p>
@@ -985,19 +997,19 @@
             data-aos-delay="100"
           >
             <div
-              class="h-full flex items-center bg-white border-gray-100 shadow-sm border p-4 rounded-2xl hover:shadow-md hover:-translate-y-1 transition-all duration-300"
+              class="h-full flex items-center bg-white border-gray-100 shadow-sm border p-4 rounded-xl hover:shadow-md hover:-translate-y-1 transition-all duration-300"
             >
               <img
                 alt="Sasmal"
-                class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 shadow-sm"
+                class="w-14 h-14 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 shadow-sm"
                 src="./images/sasmal.jpg"
               />
               <div class="flex-grow">
-                <h2 class="text-gray-900 font-bold font-serif text-lg">
+                <h2 class="text-gray-900 font-semibold font-serif text-base">
                   Subhadip Sasmal
                 </h2>
                 <p
-                  class="text-indigo-500 text-sm font-semibold tracking-wide uppercase mt-1"
+                  class="text-indigo-500 text-xs font-semibold tracking-wide uppercase mt-1"
                 >
                   Hospital Management
                 </p>
@@ -1010,19 +1022,19 @@
             data-aos-delay="150"
           >
             <div
-              class="h-full flex items-center bg-white border-gray-100 shadow-sm border p-4 rounded-2xl hover:shadow-md hover:-translate-y-1 transition-all duration-300"
+              class="h-full flex items-center bg-white border-gray-100 shadow-sm border p-4 rounded-xl hover:shadow-md hover:-translate-y-1 transition-all duration-300"
             >
               <img
                 alt="Asish"
-                class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 shadow-sm"
+                class="w-14 h-14 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 shadow-sm"
                 src="./images/asish.jpg"
               />
               <div class="flex-grow">
-                <h2 class="text-gray-900 font-bold font-serif text-lg">
+                <h2 class="text-gray-900 font-semibold font-serif text-base">
                   Asish Jana
                 </h2>
                 <p
-                  class="text-indigo-500 text-sm font-semibold tracking-wide uppercase mt-1"
+                  class="text-indigo-500 text-xs font-semibold tracking-wide uppercase mt-1"
                 >
                   Doctor
                 </p>
@@ -1036,19 +1048,19 @@
             data-aos-delay="50"
           >
             <div
-              class="h-full flex items-center bg-white border-gray-100 shadow-sm border p-4 rounded-2xl hover:shadow-md hover:-translate-y-1 transition-all duration-300"
+              class="h-full flex items-center bg-white border-gray-100 shadow-sm border p-4 rounded-xl hover:shadow-md hover:-translate-y-1 transition-all duration-300"
             >
               <img
                 alt="Suvankar"
-                class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 shadow-sm"
+                class="w-14 h-14 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 shadow-sm"
                 src="./images/bhuski.jpg"
               />
               <div class="flex-grow">
-                <h2 class="text-gray-900 font-bold font-serif text-lg">
+                <h2 class="text-gray-900 font-semibold font-serif text-base">
                   Suvankar Bera
                 </h2>
                 <p
-                  class="text-indigo-500 text-sm font-semibold tracking-wide uppercase mt-1"
+                  class="text-indigo-500 text-xs font-semibold tracking-wide uppercase mt-1"
                 >
                   Pharmasist
                 </p>
@@ -1061,19 +1073,19 @@
             data-aos-delay="100"
           >
             <div
-              class="h-full flex items-center bg-white border-gray-100 shadow-sm border p-4 rounded-2xl hover:shadow-md hover:-translate-y-1 transition-all duration-300"
+              class="h-full flex items-center bg-white border-gray-100 shadow-sm border p-4 rounded-xl hover:shadow-md hover:-translate-y-1 transition-all duration-300"
             >
               <img
                 alt="Bishop"
-                class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 shadow-sm"
+                class="w-14 h-14 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 shadow-sm"
                 src="./images/bishop.jpg"
               />
               <div class="flex-grow">
-                <h2 class="text-gray-900 font-bold font-serif text-lg">
+                <h2 class="text-gray-900 font-semibold font-serif text-base">
                   Bishop Bera
                 </h2>
                 <p
-                  class="text-indigo-500 text-sm font-semibold tracking-wide uppercase mt-1"
+                  class="text-indigo-500 text-xs font-semibold tracking-wide uppercase mt-1"
                 >
                   Agriculturist
                 </p>
@@ -1086,19 +1098,19 @@
             data-aos-delay="150"
           >
             <div
-              class="h-full flex items-center bg-white border-gray-100 shadow-sm border p-4 rounded-2xl hover:shadow-md hover:-translate-y-1 transition-all duration-300"
+              class="h-full flex items-center bg-white border-gray-100 shadow-sm border p-4 rounded-xl hover:shadow-md hover:-translate-y-1 transition-all duration-300"
             >
               <img
                 alt="Nilu"
-                class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 shadow-sm"
+                class="w-14 h-14 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 shadow-sm"
                 src="./images/nilu.jpg"
               />
               <div class="flex-grow">
-                <h2 class="text-gray-900 font-bold font-serif text-lg">
+                <h2 class="text-gray-900 font-semibold font-serif text-base">
                   Nilu Pramanik
                 </h2>
                 <p
-                  class="text-indigo-500 text-sm font-semibold tracking-wide uppercase mt-1"
+                  class="text-indigo-500 text-xs font-semibold tracking-wide uppercase mt-1"
                 >
                   Aquaculturist
                 </p>
@@ -1111,22 +1123,20 @@
 
     <!-- my memories (STRUCTURAL FIX PRESERVED) -->
     <section class="bg-white border-b border-gray-100 overflow-hidden">
-      <div class="container px-5 py-24 mx-auto flex flex-wrap">
+      <div class="container px-5 py-20 mx-auto flex flex-wrap">
         <div
-          class="flex w-full mb-16 flex-col md:flex-row md:items-end"
+          class="flex w-full mb-12 flex-col md:flex-row md:items-end"
           data-aos="fade-up"
         >
           <div class="md:w-1/3">
             <h1
-              class="font-serif sm:text-4xl text-3xl font-bold text-gray-900 mb-4 md:mb-2"
+              class="font-serif sm:text-3xl text-2xl font-bold text-gray-900 mb-3 md:mb-2"
             >
               Some Yaadein
             </h1>
-            <div class="h-1 w-20 bg-indigo-500 rounded mb-4 md:mb-0"></div>
+            <div class="h-1 w-16 bg-indigo-500 rounded mb-4 md:mb-0"></div>
           </div>
-          <p
-            class="md:w-2/3 md:pl-8 leading-relaxed text-lg text-gray-500 font-medium"
-          >
+          <p class="md:w-2/3 md:pl-8 leading-relaxed text-base text-gray-500">
             Time and tide waits for none. So I take my phone and capture those
             moments which can't never get back. Memories are beautiful,
             beautiful memories.
@@ -1140,47 +1150,47 @@
           data-aos-duration="1000"
         >
           <div class="flex flex-wrap w-1/2">
-            <div class="md:p-2 p-1 w-1/2 overflow-hidden rounded-xl">
+            <div class="md:p-2 p-1 w-1/2 overflow-hidden rounded-lg">
               <img
                 alt="gallery"
-                class="w-full h-full object-cover object-center block rounded-xl hover:scale-105 transition-transform duration-500 cursor-pointer"
+                class="w-full h-full object-cover object-center block rounded-lg hover:scale-105 transition-transform duration-500 cursor-pointer"
                 src="./memories/memory 1.jpg"
               />
             </div>
-            <div class="md:p-2 p-1 w-1/2 overflow-hidden rounded-xl">
+            <div class="md:p-2 p-1 w-1/2 overflow-hidden rounded-lg">
               <img
                 alt="gallery"
-                class="w-full h-full object-cover object-center block rounded-xl hover:scale-105 transition-transform duration-500 cursor-pointer"
+                class="w-full h-full object-cover object-center block rounded-lg hover:scale-105 transition-transform duration-500 cursor-pointer"
                 src="./memories/memory 2.jpg"
               />
             </div>
-            <div class="md:p-2 p-1 w-full overflow-hidden rounded-xl">
+            <div class="md:p-2 p-1 w-full overflow-hidden rounded-lg">
               <img
                 alt="gallery"
-                class="w-full h-full object-cover object-center block rounded-xl hover:scale-105 transition-transform duration-500 cursor-pointer"
+                class="w-full h-full object-cover object-center block rounded-lg hover:scale-105 transition-transform duration-500 cursor-pointer"
                 src="./memories/memory 3.jpg"
               />
             </div>
           </div>
           <div class="flex flex-wrap w-1/2">
-            <div class="md:p-2 p-1 w-full overflow-hidden rounded-xl">
+            <div class="md:p-2 p-1 w-full overflow-hidden rounded-lg">
               <img
                 alt="gallery"
-                class="w-full h-full object-cover object-center block rounded-xl hover:scale-105 transition-transform duration-500 cursor-pointer"
+                class="w-full h-full object-cover object-center block rounded-lg hover:scale-105 transition-transform duration-500 cursor-pointer"
                 src="./memories/memory 4.jpg"
               />
             </div>
-            <div class="md:p-2 p-1 w-1/2 overflow-hidden rounded-xl">
+            <div class="md:p-2 p-1 w-1/2 overflow-hidden rounded-lg">
               <img
                 alt="gallery"
-                class="w-full h-full object-cover object-center block rounded-xl hover:scale-105 transition-transform duration-500 cursor-pointer"
+                class="w-full h-full object-cover object-center block rounded-lg hover:scale-105 transition-transform duration-500 cursor-pointer"
                 src="./memories/memory 5.jpg"
               />
             </div>
-            <div class="md:p-2 p-1 w-1/2 overflow-hidden rounded-xl">
+            <div class="md:p-2 p-1 w-1/2 overflow-hidden rounded-lg">
               <img
                 alt="gallery"
-                class="w-full h-full object-cover object-center block rounded-xl hover:scale-105 transition-transform duration-500 cursor-pointer"
+                class="w-full h-full object-cover object-center block rounded-lg hover:scale-105 transition-transform duration-500 cursor-pointer"
                 src="./memories/memory 6.jpg"
               />
             </div>
@@ -1194,47 +1204,47 @@
           data-aos-duration="1000"
         >
           <div class="flex flex-wrap w-1/2">
-            <div class="md:p-2 p-1 w-1/2 overflow-hidden rounded-xl">
+            <div class="md:p-2 p-1 w-1/2 overflow-hidden rounded-lg">
               <img
                 alt="gallery"
-                class="w-full h-full object-cover object-center block rounded-xl hover:scale-105 transition-transform duration-500 cursor-pointer"
+                class="w-full h-full object-cover object-center block rounded-lg hover:scale-105 transition-transform duration-500 cursor-pointer"
                 src="./memories/memory 7.jpg"
               />
             </div>
-            <div class="md:p-2 p-1 w-1/2 overflow-hidden rounded-xl">
+            <div class="md:p-2 p-1 w-1/2 overflow-hidden rounded-lg">
               <img
                 alt="gallery"
-                class="w-full h-full object-cover object-center block rounded-xl hover:scale-105 transition-transform duration-500 cursor-pointer"
+                class="w-full h-full object-cover object-center block rounded-lg hover:scale-105 transition-transform duration-500 cursor-pointer"
                 src="./memories/memory 8.jpg"
               />
             </div>
-            <div class="md:p-2 p-1 w-full overflow-hidden rounded-xl">
+            <div class="md:p-2 p-1 w-full overflow-hidden rounded-lg">
               <img
                 alt="gallery"
-                class="w-full h-full object-cover object-center block rounded-xl hover:scale-105 transition-transform duration-500 cursor-pointer"
+                class="w-full h-full object-cover object-center block rounded-lg hover:scale-105 transition-transform duration-500 cursor-pointer"
                 src="./memories/memory 9.jpg"
               />
             </div>
           </div>
           <div class="flex flex-wrap w-1/2">
-            <div class="md:p-2 p-1 w-full overflow-hidden rounded-xl">
+            <div class="md:p-2 p-1 w-full overflow-hidden rounded-lg">
               <img
                 alt="gallery"
-                class="w-full h-full object-cover object-center block rounded-xl hover:scale-105 transition-transform duration-500 cursor-pointer"
+                class="w-full h-full object-cover object-center block rounded-lg hover:scale-105 transition-transform duration-500 cursor-pointer"
                 src="./memories/memory 10.jpg"
               />
             </div>
-            <div class="md:p-2 p-1 w-1/2 overflow-hidden rounded-xl">
+            <div class="md:p-2 p-1 w-1/2 overflow-hidden rounded-lg">
               <img
                 alt="gallery"
-                class="w-full h-full object-cover object-center block rounded-xl hover:scale-105 transition-transform duration-500 cursor-pointer"
+                class="w-full h-full object-cover object-center block rounded-lg hover:scale-105 transition-transform duration-500 cursor-pointer"
                 src="./memories/memory 11.jpg"
               />
             </div>
-            <div class="md:p-2 p-1 w-1/2 overflow-hidden rounded-xl">
+            <div class="md:p-2 p-1 w-1/2 overflow-hidden rounded-lg">
               <img
                 alt="gallery"
-                class="w-full h-full object-cover object-center block rounded-xl hover:scale-105 transition-transform duration-500 cursor-pointer"
+                class="w-full h-full object-cover object-center block rounded-lg hover:scale-105 transition-transform duration-500 cursor-pointer"
                 src="./memories/memory 12.jpg"
               />
             </div>
@@ -1248,47 +1258,47 @@
           data-aos-duration="1000"
         >
           <div class="flex flex-wrap w-1/2">
-            <div class="md:p-2 p-1 w-1/2 overflow-hidden rounded-xl">
+            <div class="md:p-2 p-1 w-1/2 overflow-hidden rounded-lg">
               <img
                 alt="gallery"
-                class="w-full h-full object-cover object-center block rounded-xl hover:scale-105 transition-transform duration-500 cursor-pointer"
+                class="w-full h-full object-cover object-center block rounded-lg hover:scale-105 transition-transform duration-500 cursor-pointer"
                 src="./memories/memory 13.jpg"
               />
             </div>
-            <div class="md:p-2 p-1 w-1/2 overflow-hidden rounded-xl">
+            <div class="md:p-2 p-1 w-1/2 overflow-hidden rounded-lg">
               <img
                 alt="gallery"
-                class="w-full h-full object-cover object-center block rounded-xl hover:scale-105 transition-transform duration-500 cursor-pointer"
+                class="w-full h-full object-cover object-center block rounded-lg hover:scale-105 transition-transform duration-500 cursor-pointer"
                 src="./memories/memory 14.jpg"
               />
             </div>
-            <div class="md:p-2 p-1 w-full overflow-hidden rounded-xl">
+            <div class="md:p-2 p-1 w-full overflow-hidden rounded-lg">
               <img
                 alt="gallery"
-                class="w-full h-full object-cover object-center block rounded-xl hover:scale-105 transition-transform duration-500 cursor-pointer"
+                class="w-full h-full object-cover object-center block rounded-lg hover:scale-105 transition-transform duration-500 cursor-pointer"
                 src="./memories/memory 15.jpg"
               />
             </div>
           </div>
           <div class="flex flex-wrap w-1/2">
-            <div class="md:p-2 p-1 w-full overflow-hidden rounded-xl">
+            <div class="md:p-2 p-1 w-full overflow-hidden rounded-lg">
               <img
                 alt="gallery"
-                class="w-full h-full object-cover object-center block rounded-xl hover:scale-105 transition-transform duration-500 cursor-pointer"
+                class="w-full h-full object-cover object-center block rounded-lg hover:scale-105 transition-transform duration-500 cursor-pointer"
                 src="./memories/memory 16.jpg"
               />
             </div>
-            <div class="md:p-2 p-1 w-1/2 overflow-hidden rounded-xl">
+            <div class="md:p-2 p-1 w-1/2 overflow-hidden rounded-lg">
               <img
                 alt="gallery"
-                class="w-full h-full object-cover object-center block rounded-xl hover:scale-105 transition-transform duration-500 cursor-pointer"
+                class="w-full h-full object-cover object-center block rounded-lg hover:scale-105 transition-transform duration-500 cursor-pointer"
                 src="./memories/memory 17.jpg"
               />
             </div>
-            <div class="md:p-2 p-1 w-1/2 overflow-hidden rounded-xl">
+            <div class="md:p-2 p-1 w-1/2 overflow-hidden rounded-lg">
               <img
                 alt="gallery"
-                class="w-full h-full object-cover object-center block rounded-xl hover:scale-105 transition-transform duration-500 cursor-pointer"
+                class="w-full h-full object-cover object-center block rounded-lg hover:scale-105 transition-transform duration-500 cursor-pointer"
                 src="./memories/memory 18.jpg"
               />
             </div>
@@ -1302,47 +1312,47 @@
           data-aos-duration="1000"
         >
           <div class="flex flex-wrap w-1/2">
-            <div class="md:p-2 p-1 w-1/2 overflow-hidden rounded-xl">
+            <div class="md:p-2 p-1 w-1/2 overflow-hidden rounded-lg">
               <img
                 alt="gallery"
-                class="w-full h-full object-cover object-center block rounded-xl hover:scale-105 transition-transform duration-500 cursor-pointer"
+                class="w-full h-full object-cover object-center block rounded-lg hover:scale-105 transition-transform duration-500 cursor-pointer"
                 src="./memories/memory 19.jpeg"
               />
             </div>
-            <div class="md:p-2 p-1 w-1/2 overflow-hidden rounded-xl">
+            <div class="md:p-2 p-1 w-1/2 overflow-hidden rounded-lg">
               <img
                 alt="gallery"
-                class="w-full h-full object-cover object-center block rounded-xl hover:scale-105 transition-transform duration-500 cursor-pointer"
+                class="w-full h-full object-cover object-center block rounded-lg hover:scale-105 transition-transform duration-500 cursor-pointer"
                 src="./memories/memory 20.jpg"
               />
             </div>
-            <div class="md:p-2 p-1 w-full overflow-hidden rounded-xl">
+            <div class="md:p-2 p-1 w-full overflow-hidden rounded-lg">
               <img
                 alt="gallery"
-                class="w-full h-full object-cover object-center block rounded-xl hover:scale-105 transition-transform duration-500 cursor-pointer"
+                class="w-full h-full object-cover object-center block rounded-lg hover:scale-105 transition-transform duration-500 cursor-pointer"
                 src="./memories/memory 21.jpg"
               />
             </div>
           </div>
           <div class="flex flex-wrap w-1/2">
-            <div class="md:p-2 p-1 w-full overflow-hidden rounded-xl">
+            <div class="md:p-2 p-1 w-full overflow-hidden rounded-lg">
               <img
                 alt="gallery"
-                class="w-full h-full object-cover object-center block rounded-xl hover:scale-105 transition-transform duration-500 cursor-pointer"
+                class="w-full h-full object-cover object-center block rounded-lg hover:scale-105 transition-transform duration-500 cursor-pointer"
                 src="./memories/memory 22.jpg"
               />
             </div>
-            <div class="md:p-2 p-1 w-1/2 overflow-hidden rounded-xl">
+            <div class="md:p-2 p-1 w-1/2 overflow-hidden rounded-lg">
               <img
                 alt="gallery"
-                class="w-full h-full object-cover object-center block rounded-xl hover:scale-105 transition-transform duration-500 cursor-pointer"
+                class="w-full h-full object-cover object-center block rounded-lg hover:scale-105 transition-transform duration-500 cursor-pointer"
                 src="./memories/memory 23.jpg"
               />
             </div>
-            <div class="md:p-2 p-1 w-1/2 overflow-hidden rounded-xl">
+            <div class="md:p-2 p-1 w-1/2 overflow-hidden rounded-lg">
               <img
                 alt="gallery"
-                class="w-full h-full object-cover object-center block rounded-xl hover:scale-105 transition-transform duration-500 cursor-pointer"
+                class="w-full h-full object-cover object-center block rounded-lg hover:scale-105 transition-transform duration-500 cursor-pointer"
                 src="./memories/memory 24.jpg"
               />
             </div>
@@ -1356,47 +1366,47 @@
           data-aos-duration="1000"
         >
           <div class="flex flex-wrap w-1/2">
-            <div class="md:p-2 p-1 w-1/2 overflow-hidden rounded-xl">
+            <div class="md:p-2 p-1 w-1/2 overflow-hidden rounded-lg">
               <img
                 alt="gallery"
-                class="w-full h-full object-cover object-center block rounded-xl hover:scale-105 transition-transform duration-500 cursor-pointer"
+                class="w-full h-full object-cover object-center block rounded-lg hover:scale-105 transition-transform duration-500 cursor-pointer"
                 src="./memories/memory 25.jpg"
               />
             </div>
-            <div class="md:p-2 p-1 w-1/2 overflow-hidden rounded-xl">
+            <div class="md:p-2 p-1 w-1/2 overflow-hidden rounded-lg">
               <img
                 alt="gallery"
-                class="w-full h-full object-cover object-center block rounded-xl hover:scale-105 transition-transform duration-500 cursor-pointer"
+                class="w-full h-full object-cover object-center block rounded-lg hover:scale-105 transition-transform duration-500 cursor-pointer"
                 src="./memories/memory 26.jpg"
               />
             </div>
-            <div class="md:p-2 p-1 w-full overflow-hidden rounded-xl">
+            <div class="md:p-2 p-1 w-full overflow-hidden rounded-lg">
               <img
                 alt="gallery"
-                class="w-full h-full object-cover object-center block rounded-xl hover:scale-105 transition-transform duration-500 cursor-pointer"
+                class="w-full h-full object-cover object-center block rounded-lg hover:scale-105 transition-transform duration-500 cursor-pointer"
                 src="./memories/memory 27.jpg"
               />
             </div>
           </div>
           <div class="flex flex-wrap w-1/2">
-            <div class="md:p-2 p-1 w-full overflow-hidden rounded-xl">
+            <div class="md:p-2 p-1 w-full overflow-hidden rounded-lg">
               <img
                 alt="gallery"
-                class="w-full h-full object-cover object-center block rounded-xl hover:scale-105 transition-transform duration-500 cursor-pointer"
+                class="w-full h-full object-cover object-center block rounded-lg hover:scale-105 transition-transform duration-500 cursor-pointer"
                 src="./memories/memory 28.jpg"
               />
             </div>
-            <div class="md:p-2 p-1 w-1/2 overflow-hidden rounded-xl">
+            <div class="md:p-2 p-1 w-1/2 overflow-hidden rounded-lg">
               <img
                 alt="gallery"
-                class="w-full h-full object-cover object-center block rounded-xl hover:scale-105 transition-transform duration-500 cursor-pointer"
+                class="w-full h-full object-cover object-center block rounded-lg hover:scale-105 transition-transform duration-500 cursor-pointer"
                 src="./memories/memory 29.jpg"
               />
             </div>
-            <div class="md:p-2 p-1 w-1/2 overflow-hidden rounded-xl">
+            <div class="md:p-2 p-1 w-1/2 overflow-hidden rounded-lg">
               <img
                 alt="gallery"
-                class="w-full h-full object-cover object-center block rounded-xl hover:scale-105 transition-transform duration-500 cursor-pointer"
+                class="w-full h-full object-cover object-center block rounded-lg hover:scale-105 transition-transform duration-500 cursor-pointer"
                 src="./memories/memory 30.jpg"
               />
             </div>
@@ -1406,23 +1416,21 @@
     </section>
 
     <!-- NEW SECTION: Find Me Online (Social Links & Portfolios) -->
-    <section id="connect" class="bg-slate-50 py-24">
+    <section id="connect" class="bg-slate-50 py-20">
       <div class="container px-5 mx-auto">
         <div class="flex flex-col text-center w-full mb-12" data-aos="fade-up">
           <h1
-            class="text-sm text-indigo-500 tracking-widest font-bold mb-2 uppercase"
+            class="text-xs text-indigo-500 tracking-widest font-semibold mb-2 uppercase"
           >
             Connect
           </h1>
           <h2
-            class="font-serif sm:text-4xl text-3xl font-bold mb-4 text-gray-900"
+            class="font-serif sm:text-3xl text-2xl font-bold mb-4 text-gray-900"
           >
             Find Me Online
           </h2>
-          <div class="h-1 w-20 bg-indigo-500 rounded mx-auto mb-6"></div>
-          <p
-            class="lg:w-2/3 mx-auto leading-relaxed text-lg text-gray-500 font-medium"
-          >
+          <div class="h-1 w-16 bg-indigo-500 rounded mx-auto mb-4"></div>
+          <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-500">
             Explore my work, code, and socials across the web.
           </p>
         </div>
@@ -1441,11 +1449,13 @@
             data-aos-delay="50"
           >
             <div
-              class="w-12 h-12 flex items-center justify-center bg-indigo-50 text-indigo-600 rounded-lg group-hover:bg-indigo-600 group-hover:text-white transition-colors"
+              class="w-10 h-10 flex items-center justify-center bg-indigo-50 text-indigo-600 rounded-lg group-hover:bg-indigo-600 group-hover:text-white transition-colors"
             >
-              <i class="fa-solid fa-briefcase text-xl"></i>
+              <i class="fa-solid fa-briefcase text-base"></i>
             </div>
-            <span class="font-bold text-gray-800 tracking-wide">Portfolio</span>
+            <span class="font-semibold text-gray-800 text-sm tracking-wide"
+              >Portfolio</span
+            >
           </a>
 
           <!-- Qurexo -->
@@ -1458,11 +1468,13 @@
             data-aos-delay="100"
           >
             <div
-              class="w-12 h-12 flex items-center justify-center bg-blue-50 text-blue-600 rounded-lg group-hover:bg-blue-600 group-hover:text-white transition-colors"
+              class="w-10 h-10 flex items-center justify-center bg-blue-50 text-blue-600 rounded-lg group-hover:bg-blue-600 group-hover:text-white transition-colors"
             >
-              <i class="fa-solid fa-globe text-xl"></i>
+              <i class="fa-solid fa-globe text-base"></i>
             </div>
-            <span class="font-bold text-gray-800 tracking-wide">Qurexo</span>
+            <span class="font-semibold text-gray-800 text-sm tracking-wide"
+              >Qurexo</span
+            >
           </a>
 
           <!-- GitHub -->
@@ -1475,11 +1487,13 @@
             data-aos-delay="150"
           >
             <div
-              class="w-12 h-12 flex items-center justify-center bg-gray-100 text-gray-800 rounded-lg group-hover:bg-gray-800 group-hover:text-white transition-colors"
+              class="w-10 h-10 flex items-center justify-center bg-gray-100 text-gray-800 rounded-lg group-hover:bg-gray-800 group-hover:text-white transition-colors"
             >
-              <i class="fa-brands fa-github text-2xl"></i>
+              <i class="fa-brands fa-github text-lg"></i>
             </div>
-            <span class="font-bold text-gray-800 tracking-wide">GitHub</span>
+            <span class="font-semibold text-gray-800 text-sm tracking-wide"
+              >GitHub</span
+            >
           </a>
 
           <!-- LinkedIn -->
@@ -1492,11 +1506,13 @@
             data-aos-delay="200"
           >
             <div
-              class="w-12 h-12 flex items-center justify-center bg-blue-50 text-blue-700 rounded-lg group-hover:bg-blue-700 group-hover:text-white transition-colors"
+              class="w-10 h-10 flex items-center justify-center bg-blue-50 text-blue-700 rounded-lg group-hover:bg-blue-700 group-hover:text-white transition-colors"
             >
-              <i class="fa-brands fa-linkedin-in text-2xl"></i>
+              <i class="fa-brands fa-linkedin-in text-lg"></i>
             </div>
-            <span class="font-bold text-gray-800 tracking-wide">LinkedIn</span>
+            <span class="font-semibold text-gray-800 text-sm tracking-wide"
+              >LinkedIn</span
+            >
           </a>
 
           <!-- Email -->
@@ -1507,11 +1523,13 @@
             data-aos-delay="250"
           >
             <div
-              class="w-12 h-12 flex items-center justify-center bg-red-50 text-red-500 rounded-lg group-hover:bg-red-500 group-hover:text-white transition-colors"
+              class="w-10 h-10 flex items-center justify-center bg-red-50 text-red-500 rounded-lg group-hover:bg-red-500 group-hover:text-white transition-colors"
             >
-              <i class="fa-solid fa-envelope text-xl"></i>
+              <i class="fa-solid fa-envelope text-base"></i>
             </div>
-            <span class="font-bold text-gray-800 tracking-wide">Email Me</span>
+            <span class="font-semibold text-gray-800 text-sm tracking-wide"
+              >Email Me</span
+            >
           </a>
 
           <!-- YouTube -->
@@ -1524,11 +1542,13 @@
             data-aos-delay="300"
           >
             <div
-              class="w-12 h-12 flex items-center justify-center bg-red-50 text-red-600 rounded-lg group-hover:bg-red-600 group-hover:text-white transition-colors"
+              class="w-10 h-10 flex items-center justify-center bg-red-50 text-red-600 rounded-lg group-hover:bg-red-600 group-hover:text-white transition-colors"
             >
-              <i class="fa-brands fa-youtube text-xl"></i>
+              <i class="fa-brands fa-youtube text-lg"></i>
             </div>
-            <span class="font-bold text-gray-800 tracking-wide">YouTube</span>
+            <span class="font-semibold text-gray-800 text-sm tracking-wide"
+              >YouTube</span
+            >
           </a>
 
           <!-- Pinterest -->
@@ -1541,11 +1561,13 @@
             data-aos-delay="350"
           >
             <div
-              class="w-12 h-12 flex items-center justify-center bg-red-50 text-red-600 rounded-lg group-hover:bg-red-600 group-hover:text-white transition-colors"
+              class="w-10 h-10 flex items-center justify-center bg-red-50 text-red-600 rounded-lg group-hover:bg-red-600 group-hover:text-white transition-colors"
             >
-              <i class="fa-brands fa-pinterest-p text-xl"></i>
+              <i class="fa-brands fa-pinterest-p text-lg"></i>
             </div>
-            <span class="font-bold text-gray-800 tracking-wide">Pinterest</span>
+            <span class="font-semibold text-gray-800 text-sm tracking-wide"
+              >Pinterest</span
+            >
           </a>
 
           <!-- Twitter / X -->
@@ -1558,11 +1580,11 @@
             data-aos-delay="400"
           >
             <div
-              class="w-12 h-12 flex items-center justify-center bg-gray-100 text-gray-900 rounded-lg group-hover:bg-gray-900 group-hover:text-white transition-colors"
+              class="w-10 h-10 flex items-center justify-center bg-gray-100 text-gray-900 rounded-lg group-hover:bg-gray-900 group-hover:text-white transition-colors"
             >
-              <i class="fa-brands fa-x-twitter text-xl"></i>
+              <i class="fa-brands fa-x-twitter text-lg"></i>
             </div>
-            <span class="font-bold text-gray-800 tracking-wide"
+            <span class="font-semibold text-gray-800 text-sm tracking-wide"
               >Twitter / X</span
             >
           </a>
@@ -1577,11 +1599,13 @@
             data-aos-delay="450"
           >
             <div
-              class="w-12 h-12 flex items-center justify-center bg-pink-50 text-pink-500 rounded-lg group-hover:bg-pink-500 group-hover:text-white transition-colors"
+              class="w-10 h-10 flex items-center justify-center bg-pink-50 text-pink-500 rounded-lg group-hover:bg-pink-500 group-hover:text-white transition-colors"
             >
-              <i class="fa-brands fa-figma text-xl"></i>
+              <i class="fa-brands fa-figma text-lg"></i>
             </div>
-            <span class="font-bold text-gray-800 tracking-wide">Figma</span>
+            <span class="font-semibold text-gray-800 text-sm tracking-wide"
+              >Figma</span
+            >
           </a>
 
           <!-- Buy Me a Coffee -->
@@ -1594,11 +1618,11 @@
             data-aos-delay="500"
           >
             <div
-              class="w-12 h-12 flex items-center justify-center bg-yellow-50 text-yellow-600 rounded-lg group-hover:bg-yellow-500 group-hover:text-white transition-colors"
+              class="w-10 h-10 flex items-center justify-center bg-yellow-50 text-yellow-600 rounded-lg group-hover:bg-yellow-500 group-hover:text-white transition-colors"
             >
-              <i class="fa-solid fa-mug-hot text-xl"></i>
+              <i class="fa-solid fa-mug-hot text-lg"></i>
             </div>
-            <span class="font-bold text-gray-800 tracking-wide"
+            <span class="font-semibold text-gray-800 text-sm tracking-wide"
               >Buy Me A Coffee</span
             >
           </a>
@@ -1613,11 +1637,11 @@
             data-aos-delay="550"
           >
             <div
-              class="w-12 h-12 flex items-center justify-center bg-orange-50 text-orange-600 rounded-lg group-hover:bg-orange-500 group-hover:text-white transition-colors"
+              class="w-10 h-10 flex items-center justify-center bg-orange-50 text-orange-600 rounded-lg group-hover:bg-orange-500 group-hover:text-white transition-colors"
             >
-              <i class="fa-brands fa-product-hunt text-xl"></i>
+              <i class="fa-brands fa-product-hunt text-lg"></i>
             </div>
-            <span class="font-bold text-gray-800 tracking-wide"
+            <span class="font-semibold text-gray-800 text-sm tracking-wide"
               >Product Hunt</span
             >
           </a>
@@ -1631,15 +1655,16 @@
         class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col"
       >
         <a
-          class="flex font-serif font-bold items-center md:justify-start justify-center text-gray-900 gap-2"
+          class="flex font-serif font-semibold items-center md:justify-start justify-center text-gray-900 gap-2"
         >
           <div class="p-1.5 bg-indigo-600 text-white rounded-md shadow-sm">
-            <i class="fa-solid fa-wand-magic-sparkles text-sm"></i>
+            <i class="fa-solid fa-code text-xs"></i>
           </div>
           <span class="text-xl tracking-tight">Bhowmik's Spot</span>
         </a>
+        <!-- Center on mobile, left on large displays -->
         <p
-          class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l sm:border-gray-200 sm:py-2 sm:mt-0 mt-4 font-semibold"
+          class="text-sm text-center sm:text-left text-gray-500 sm:ml-4 sm:pl-4 sm:border-l sm:border-gray-200 sm:py-2 sm:mt-0 mt-4 font-medium"
         >
           © 2022 Made with ❤️ -
           <a
@@ -1659,7 +1684,7 @@
             aria-label="Website"
             class="text-gray-400 hover:text-indigo-600 hover:-translate-y-1 transition-all duration-300"
           >
-            <i class="fa-solid fa-globe text-xl"></i>
+            <i class="fa-solid fa-globe text-lg"></i>
           </a>
           <!-- WhatsApp -->
           <a
@@ -1667,7 +1692,7 @@
             aria-label="WhatsApp"
             class="text-gray-400 hover:text-green-500 hover:-translate-y-1 transition-all duration-300"
           >
-            <i class="fa-brands fa-whatsapp text-xl"></i>
+            <i class="fa-brands fa-whatsapp text-lg"></i>
           </a>
           <!-- Email -->
           <a
@@ -1675,7 +1700,7 @@
             aria-label="Email"
             class="text-gray-400 hover:text-red-500 hover:-translate-y-1 transition-all duration-300"
           >
-            <i class="fa-solid fa-envelope text-xl"></i>
+            <i class="fa-solid fa-envelope text-lg"></i>
           </a>
         </span>
       </div>
@@ -1706,9 +1731,9 @@
 
           // Toggle icon between hamburger and 'X'
           if (menu.classList.contains("hidden")) {
-            icon.className = "fa-solid fa-bars text-2xl";
+            icon.className = "fa-solid fa-bars text-xl";
           } else {
-            icon.className = "fa-solid fa-xmark text-2xl text-indigo-600";
+            icon.className = "fa-solid fa-xmark text-xl text-indigo-600";
           }
         });
       });
