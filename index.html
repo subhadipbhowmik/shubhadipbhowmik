@@ -1,647 +1,1717 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
+<!doctype html>
+<html lang="en" class="scroll-smooth overflow-x-hidden">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bhowmik's Spot</title>
-    <link rel="icon" href="./images/my cartoon avatar.png">
-</head>
-<body>
+    <link rel="icon" href="./images/my cartoon avatar.png" />
+
+    <!-- Luxury Professional Fonts: Playfair Display (Headings) & Montserrat (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Font Awesome 6 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Config for Custom Fonts -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Montserrat", "sans-serif"],
+              serif: ['"Playfair Display"', "serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="text-gray-600 bg-white antialiased overflow-x-hidden">
     <!-- header  -->
-    <header class="text-gray-600 body-font">
-        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-            <!-- logo svg  -->
-
-            <span class="ml-3 text-xl">Bhowmik's Spot</span>
-          </a>
-          <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-            <a class="mr-5 hover:text-gray-900" href="https://www.codingport.in">My Blog</a>
-          </nav>
-          <!-- button link  -->
-
-          <a href="https://www.youtube.com/channel/UCfY3YDZGMvWX0ztvLC0dc8Q">
-
-          <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">My YouTube Channel
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-              <path d="M5 12h14M12 5l7 7-7 7"></path>
-            </svg>
-          </button>
+    <header
+      class="bg-white/90 backdrop-blur-md sticky top-0 z-50 border-b border-gray-100 shadow-sm"
+      data-aos="fade-down"
+    >
+      <div
+        class="container mx-auto flex flex-wrap p-5 items-center justify-between"
+      >
+        <!-- Logo -->
+        <a
+          class="flex font-serif font-bold items-center text-gray-900 gap-3 cursor-pointer"
+        >
+          <div class="p-2 bg-indigo-600 text-white rounded-lg shadow-md">
+            <i class="fa-solid fa-wand-magic-sparkles text-lg"></i>
+          </div>
+          <span class="text-2xl tracking-tight">Bhowmik's Spot</span>
         </a>
 
+        <!-- Mobile Hamburger Button -->
+        <button
+          id="mobile-menu-btn"
+          class="md:hidden block text-gray-600 hover:text-indigo-600 focus:outline-none transition-colors"
+        >
+          <i class="fa-solid fa-bars text-2xl"></i>
+        </button>
 
+        <!-- Navigation Links (Hidden on mobile by default) -->
+        <div
+          id="mobile-menu"
+          class="hidden w-full md:flex md:w-auto md:items-center mt-4 md:mt-0 flex-col md:flex-row gap-4 md:gap-0"
+        >
+          <nav
+            class="md:ml-auto flex flex-col md:flex-row items-center text-base justify-center font-medium w-full md:w-auto"
+          >
+            <a
+              class="md:mr-6 py-2 md:py-0 text-gray-500 hover:text-indigo-600 transition-colors w-full md:w-auto text-center tracking-wide"
+              href="https://www.qurexo.com/authors/shubhadip-bhowmik"
+              >My Blog</a
+            >
+          </nav>
+
+          <!-- button link  -->
+          <a
+            href="https://www.youtube.com/@shubhadipbhowmik/videos"
+            class="group w-full md:w-auto flex justify-center"
+          >
+            <button
+              class="inline-flex items-center justify-center w-full md:w-auto gap-2 bg-gray-50 border border-gray-200 py-2.5 px-5 focus:outline-none hover:bg-gray-100 hover:border-gray-300 transition-all rounded-lg text-sm font-semibold text-gray-700 uppercase tracking-wider shadow-sm"
+            >
+              My YouTube
+              <i
+                class="fa-brands fa-youtube text-red-600 text-lg group-hover:scale-110 transition-transform"
+              ></i>
+            </button>
+          </a>
         </div>
-      </header>
+      </div>
+    </header>
 
-      <!-- hero -->
-      <section class="text-gray-600 body-font">
-        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-            <img class="object-cover object-center rounded" alt="hero" src="./images/hero img.png">
-          </div>
-          <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Welcome to Bhowmik's Spot
-              <br class="hidden lg:inline-block">Ok, Let me Introduce;
-            </h1>
-            <p class="mb-8 leading-relaxed">My name is <b>Shubhadip</b>. I am basically from <b>East Medinipur, West Bengal</b>. I have done my Secondary Education from Moyna Vivekananda Vidyamandir and Higher Secondary education from CJSV. Currently, I am studying in <b>B.C.A </b>from Chandigarh University. I like to explore things on internet and like to learn different things. I want to be a <b>Software Developer</b> in future. I have a little knowledge about in <b>HTML, CSS, JS</b>...Apart from those I like to study <b>motivational books, listening stories, writing poems, hang-outs with friends</b>..</p>
-            <div class="flex justify-center">
-              <a href="https://wa.me/917550814404?text=Hi">
-              <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Let's connect</button>
+    <!-- hero -->
+    <section class="bg-white overflow-hidden">
+      <div
+        class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center"
+      >
+        <div
+          class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
+          <img
+            class="object-cover object-center rounded-2xl shadow-2xl shadow-indigo-100/60"
+            alt="hero"
+            src="./images/hero img.png"
+          />
+        </div>
+        <div
+          class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+        >
+          <h1
+            class="font-serif sm:text-5xl text-4xl mb-6 font-bold text-gray-900 tracking-tight leading-tight"
+          >
+            Welcome to Bhowmik's Spot
+            <br class="hidden lg:inline-block" /><span
+              class="text-indigo-600 text-3xl sm:text-4xl mt-3 block italic font-medium"
+              >Ok, Let me Introduce;</span
+            >
+          </h1>
+          <p class="mb-8 leading-relaxed text-lg text-gray-600 font-medium">
+            My name is <b class="text-gray-900 font-bold">Shubhadip Bhowmik</b>.
+            I am basically from
+            <b class="text-gray-900 font-bold">East Medinipur, West Bengal</b>.
+            I have done my Secondary Education from Moyna Vivekananda
+            Vidyamandir and Higher Secondary education from CJSV. Currently, I
+            am studying in <b class="text-gray-900 font-bold">B.C.A</b> from
+            Chandigarh University. I like to explore things on internet and like
+            to learn different things. I want to be a
+            <b class="text-gray-900 font-bold">Software Developer</b> in future.
+            I have a little knowledge about in
+            <b class="text-gray-900 font-bold">HTML, CSS, JS</b>...Apart from
+            those I like to study
+            <b class="text-gray-900 font-bold"
+              >motivational books, listening stories, writing poems, hang-outs
+              with friends</b
+            >..
+          </p>
+          <div class="flex flex-wrap justify-center md:justify-start gap-4">
+            <a href="#connect">
+              <button
+                class="inline-flex items-center gap-2 text-white bg-indigo-600 border-0 py-3.5 px-8 focus:outline-none hover:bg-indigo-700 hover:shadow-lg hover:shadow-indigo-200 transition-all rounded-xl text-base font-semibold uppercase tracking-wider"
+              >
+                <i class="fa-solid fa-link text-lg"></i> All My Links
+              </button>
             </a>
-
-             <a href="https://www.google.com/search?q=shubhadip+bhowmik&rlz=1C1RXQR_enIN1014IN1014&oq=shubhadip+bhowmik&aqs=chrome.0.69i59l3j69i60l3.10029j0j7&sourceid=chrome&ie=UTF-8">
-              <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Google me</button>
+            <a
+              href="https://www.google.com/search?q=shubhadip+bhowmik"
+              target="_blank"
+            >
+              <button
+                class="inline-flex items-center gap-2 text-gray-700 bg-gray-50 border border-gray-200 py-3.5 px-8 focus:outline-none hover:bg-gray-100 transition-all rounded-xl text-base font-semibold uppercase tracking-wider shadow-sm"
+              >
+                <i class="fa-brands fa-google text-lg"></i> Google me
+              </button>
             </a>
-
-            </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- my hobby -->
-
-
-      <section class="text-gray-600 body-font">
-        <div class="container px-5 py-24 mx-auto">
-          <div class="flex flex-wrap w-full mb-20 flex-col items-center text-center">
-            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">My Hobbies</h1>
-            <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">I always try to do what I love & I do with love what I wanna do. It gives me a lot of satisfiction & pleasure.</p>
-          </div>
-
+    <!-- my hobby -->
+    <section class="bg-slate-50 border-y border-gray-100">
+      <div class="container px-5 py-24 mx-auto">
+        <div
+          class="flex flex-wrap w-full mb-16 flex-col items-center text-center"
+          data-aos="fade-up"
+        >
+          <h1
+            class="font-serif sm:text-4xl text-3xl font-bold mb-4 text-gray-900"
+          >
+            My Hobbies
+          </h1>
+          <div class="h-1 w-20 bg-indigo-500 rounded mb-6"></div>
+          <p
+            class="lg:w-1/2 w-full leading-relaxed text-gray-500 text-lg font-medium"
+          >
+            I always try to do what I love & I do with love what I wanna do. It
+            gives me a lot of satisfiction & pleasure.
+          </p>
+        </div>
+        <div class="flex flex-wrap -m-4">
           <!-- reading books  -->
-          <div class="flex flex-wrap -m-4">
-            <div class="xl:w-1/3 md:w-1/2 p-4">
-              <div class="border border-gray-200 p-6 rounded-lg">
-                <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"> <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /> </svg>
-                </div>
-                <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Reading Books</h2>
-                <p class="leading-relaxed text-base">I like to study different types of books in my leisure time, listening stories, writing poems.</p>
+          <div
+            class="xl:w-1/3 md:w-1/2 p-4"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div
+              class="bg-white border border-gray-100 p-10 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 h-full"
+            >
+              <div
+                class="w-16 h-16 inline-flex items-center justify-center rounded-2xl bg-indigo-50 text-indigo-600 mb-6 shadow-inner"
+              >
+                <i class="fa-solid fa-book-open text-3xl"></i>
               </div>
-            </div>
-
-            <!-- blogging  -->
-
-            <div class="xl:w-1/3 md:w-1/2 p-4">
-              <div class="border border-gray-200 p-6 rounded-lg">
-                <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                    <path d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z" />
-                  </svg>
-                    <circle cx="6" cy="6" r="3"></circle>
-                    <circle cx="6" cy="18" r="3"></circle>
-                    <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
-                  </svg>
-                </div>
-                <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Blogging</h2>
-                <p class="leading-relaxed text-base">I am not a proffesional blogger but I try to share my experience through my blog.</p>
-              </div>
-            </div>
-
-            <!-- stay updated  -->
-
-            <div class="xl:w-1/3 md:w-1/2 p-4">
-              <div class="border border-gray-200 p-6 rounded-lg">
-                <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-  <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" />
-</svg>
-                </div>
-                <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Apprise</h2>
-                <p class="leading-relaxed text-base">I always try to be updated on different things such politics, technology, events and so on.</p>
-              </div>
+              <h2 class="text-2xl text-gray-900 font-bold font-serif mb-3">
+                Reading Books
+              </h2>
+              <p class="leading-relaxed text-gray-600 font-medium">
+                I like to study different types of books in my leisure time,
+                listening stories, writing poems.
+              </p>
             </div>
           </div>
-
-          <!-- hobby button  -->
-          <!-- <button class="flex mx-auto mt-10 bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-8 border border-blue-500 hover:border-transparent rounded text-lg">
-            Button
-          </button>
-        </div>
-        
-        <a href="https://www.google.com">
-          <button class="flex mx-auto mt-10 bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-8 border border-blue-500 hover:border-transparent rounded text-lg">
-            Button
-          </button>
-        </div>
-        </a> -->
-      </section>
-
-      <!-- my education  -->
-
-      <section class="text-gray-600 body-font">
-        <div class="container px-5 py-24 mx-auto">
-          <div class="flex flex-col text-center w-full mb-20">
-            <h1 class="text-2xl font-medium title-font mb-4 text-gray-900 tracking-widest">My Education</h1>
-            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">I am an average student. But I never compare myself with anyone. I don't have any regret because I always try to give my 100% effort. Memory of my school life will always stick up in the core of my heart.</p>
+          <!-- blogging  -->
+          <div
+            class="xl:w-1/3 md:w-1/2 p-4"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div
+              class="bg-white border border-gray-100 p-10 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 h-full"
+            >
+              <div
+                class="w-16 h-16 inline-flex items-center justify-center rounded-2xl bg-indigo-50 text-indigo-600 mb-6 shadow-inner"
+              >
+                <i class="fa-solid fa-pen-nib text-3xl"></i>
+              </div>
+              <h2 class="text-2xl text-gray-900 font-bold font-serif mb-3">
+                Blogging
+              </h2>
+              <p class="leading-relaxed text-gray-600 font-medium">
+                I am not a proffesional blogger but I try to share my experience
+                through my blog.
+              </p>
+            </div>
           </div>
+          <!-- stay updated  -->
+          <div
+            class="xl:w-1/3 md:w-1/2 p-4 mx-auto"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div
+              class="bg-white border border-gray-100 p-10 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 h-full"
+            >
+              <div
+                class="w-16 h-16 inline-flex items-center justify-center rounded-2xl bg-indigo-50 text-indigo-600 mb-6 shadow-inner"
+              >
+                <i class="fa-solid fa-earth-americas text-3xl"></i>
+              </div>
+              <h2 class="text-2xl text-gray-900 font-bold font-serif mb-3">
+                Apprise
+              </h2>
+              <p class="leading-relaxed text-gray-600 font-medium">
+                I always try to be updated on different things such politics,
+                technology, events and so on.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- my education  -->
+    <section class="bg-white">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-col text-center w-full mb-16" data-aos="fade-up">
+          <h1
+            class="text-sm text-indigo-500 tracking-widest font-bold mb-2 uppercase"
+          >
+            Journey
+          </h1>
+          <h2
+            class="font-serif sm:text-4xl text-3xl font-bold mb-4 text-gray-900"
+          >
+            My Education
+          </h2>
+          <div class="h-1 w-20 bg-indigo-500 rounded mb-6 mx-auto"></div>
+          <p
+            class="lg:w-2/3 mx-auto leading-relaxed text-lg text-gray-500 font-medium"
+          >
+            I am an average student. But I never compare myself with anyone. I
+            don't have any regret because I always try to give my 100% effort.
+            Memory of my school life will always stick up in the core of my
+            heart.
+          </p>
+        </div>
+
+        <div class="flex flex-wrap -m-4">
           <!-- school 1 -->
-          <div class="flex flex-wrap -m-4">
-            <div class="p-4 lg:w-1/2">
-              <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
-                <img alt="Nivedita Sishu Siksha Niketan" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="./schools/nivedita.jpg">
-                <div class="flex-grow sm:pl-8">
-                  <h2 class="title-font font-medium text-lg text-gray-900">Nivedita Sishu Siksha Niketan</h2>
-                  <h3 class="text-gray-500 mb-3">Primary Education</h3>
-                  <p class="mb-4">I have completed my Primary Education from here. Those days are just insane. Lots of memories. Wake up at dawn, go throughby rikshaw, playing kabaddi in the roof. I can even feel the anger of Dilip babu and politeness of Pradip babu. I always try to get GOOD sign by Pradip sir in Mathematics.</p>
-                </div>
+          <div class="p-4 lg:w-1/2" data-aos="fade-up" data-aos-delay="100">
+            <div
+              class="h-full bg-slate-50 rounded-2xl p-6 sm:p-8 flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left border border-gray-100 hover:shadow-lg transition-shadow duration-300"
+            >
+              <img
+                alt="Nivedita Sishu Siksha Niketan"
+                class="flex-shrink-0 rounded-2xl w-32 h-32 sm:w-48 sm:h-48 object-cover object-center shadow-md sm:mb-0 mb-6"
+                src="./schools/nivedita.jpg"
+              />
+              <div class="flex-grow sm:pl-8">
+                <h2 class="font-serif font-bold text-2xl text-gray-900">
+                  Nivedita Sishu Siksha Niketan
+                </h2>
+                <h3
+                  class="text-indigo-600 font-semibold text-sm tracking-wide uppercase mb-3 mt-2"
+                >
+                  Primary Education
+                </h3>
+                <p class="text-gray-600 leading-relaxed text-sm font-medium">
+                  I have completed my Primary Education from here. Those days
+                  are just insane. Lots of memories. Wake up at dawn, go
+                  throughby rikshaw, playing kabaddi in the roof. I can even
+                  feel the anger of Dilip babu and politeness of Pradip babu. I
+                  always try to get GOOD sign by Pradip sir in Mathematics.
+                </p>
               </div>
             </div>
-
-
-
-
-            <!-- school 2 -->
-
-            <div class="p-4 lg:w-1/2">
-              <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
-                <img alt="Moyna Vivekananda Vidyamandir" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="./schools/moyna.png">
-                <div class="flex-grow sm:pl-8">
-                  <h2 class="title-font font-medium text-lg text-gray-900">Moyna Vivekananda Vidyamandir</h2>
-                  <h3 class="text-gray-500 mb-3">Secondary Education</h3>
-                  <p class="mb-4">First of all I am very sorry, because I am unable to express that about my memories and moments in this school. I got lots of love and objurgation from my beloved sir and madams. Name of the school ends with Vidyamandir, Yes I can say one thing that all the teachers are iso-god of the school [Vidyamandir]</p>
-
-                </div>
+          </div>
+          <!-- school 2 -->
+          <div class="p-4 lg:w-1/2" data-aos="fade-up" data-aos-delay="200">
+            <div
+              class="h-full bg-slate-50 rounded-2xl p-6 sm:p-8 flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left border border-gray-100 hover:shadow-lg transition-shadow duration-300"
+            >
+              <img
+                alt="Moyna Vivekananda Vidyamandir"
+                class="flex-shrink-0 rounded-2xl w-32 h-32 sm:w-48 sm:h-48 object-cover object-center shadow-md sm:mb-0 mb-6"
+                src="./schools/moyna.png"
+              />
+              <div class="flex-grow sm:pl-8">
+                <h2 class="font-serif font-bold text-2xl text-gray-900">
+                  Moyna Vivekananda Vidyamandir
+                </h2>
+                <h3
+                  class="text-indigo-600 font-semibold text-sm tracking-wide uppercase mb-3 mt-2"
+                >
+                  Secondary Education
+                </h3>
+                <p class="text-gray-600 leading-relaxed text-sm font-medium">
+                  First of all I am very sorry, because I am unable to express
+                  that about my memories and moments in this school. I got lots
+                  of love and objurgation from my beloved sir and madams. Name
+                  of the school ends with Vidyamandir, Yes I can say one thing
+                  that all the teachers are iso-god of the school [Vidyamandir]
+                </p>
               </div>
             </div>
-
-
-            <!-- school 3 -->
-
-            <div class="p-4 lg:w-1/2">
-              <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
-                <img alt="Changrachak Jagadish Smriti Vidyapith" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="./schools/cjsv.jpg">
-                <div class="flex-grow sm:pl-8">
-                  <h2 class="title-font font-medium text-lg text-gray-900">Changrachak Jagadish Smriti Vidyapith</h2>
-                  <h3 class="text-gray-500 mb-3">Higher Secondary Education</h3>
-                  <p class="mb-4">It was the first time I was studying far away from my home. A new experiencein hostel life and new friends to get good exposure. Overall a good memory.</p>
-                </div>
+          </div>
+          <!-- school 3 -->
+          <div class="p-4 lg:w-1/2" data-aos="fade-up" data-aos-delay="100">
+            <div
+              class="h-full bg-slate-50 rounded-2xl p-6 sm:p-8 flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left border border-gray-100 hover:shadow-lg transition-shadow duration-300"
+            >
+              <img
+                alt="Changrachak Jagadish Smriti Vidyapith"
+                class="flex-shrink-0 rounded-2xl w-32 h-32 sm:w-48 sm:h-48 object-cover object-center shadow-md sm:mb-0 mb-6"
+                src="./schools/cjsv.jpg"
+              />
+              <div class="flex-grow sm:pl-8">
+                <h2 class="font-serif font-bold text-2xl text-gray-900">
+                  Changrachak Jagadish Smriti Vidyapith
+                </h2>
+                <h3
+                  class="text-indigo-600 font-semibold text-sm tracking-wide uppercase mb-3 mt-2"
+                >
+                  Higher Secondary Education
+                </h3>
+                <p class="text-gray-600 leading-relaxed text-sm font-medium">
+                  It was the first time I was studying far away from my home. A
+                  new experiencein hostel life and new friends to get good
+                  exposure. Overall a good memory.
+                </p>
               </div>
             </div>
-
-            <!-- college 1 -->
-
-            <div class="p-4 lg:w-1/2">
-              <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
-                <img alt="Chandigarh University" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="./schools/chandigarh.webp">
-                <div class="flex-grow sm:pl-8">
-                  <h2 class="title-font font-medium text-lg text-gray-900">Chandigarh University</h2>
-                  <h3 class="text-gray-500 mb-3">College</h3>
-                  <p class="mb-4">Currently I have taken admission here for my B.C.A. I am very excited for physically meet and interact with my new buddy and faculties.</p>
-                  <span class="inline-flex">
-                    <a class="text-gray-500" href="https://www.facebook.com/chandigarhuniversitygharuan/">
-                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                      </svg>
-                    </a>
-                    <a class="ml-2 text-gray-500" href="https://twitter.com/Chandigarh_uni">
-                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-                      </svg>
-                    </a>
-                    <a class="ml-2 text-gray-500" href="https://www.cuchd.in/">
-                      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
-                    </a>
-                  </span>
-                </div>
+          </div>
+          <!-- college 1 -->
+          <div class="p-4 lg:w-1/2" data-aos="fade-up" data-aos-delay="200">
+            <div
+              class="h-full bg-slate-50 rounded-2xl p-6 sm:p-8 flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left border border-gray-100 hover:shadow-lg transition-shadow duration-300"
+            >
+              <img
+                alt="Chandigarh University"
+                class="flex-shrink-0 rounded-2xl w-32 h-32 sm:w-48 sm:h-48 object-cover object-center shadow-md sm:mb-0 mb-6"
+                src="./schools/chandigarh.webp"
+              />
+              <div class="flex-grow sm:pl-8">
+                <h2 class="font-serif font-bold text-2xl text-gray-900">
+                  Chandigarh University
+                </h2>
+                <h3
+                  class="text-indigo-600 font-semibold text-sm tracking-wide uppercase mb-3 mt-2"
+                >
+                  College
+                </h3>
+                <p
+                  class="text-gray-600 leading-relaxed text-sm mb-4 font-medium"
+                >
+                  Currently I have taken admission here for my B.C.A. I am very
+                  excited for physically meet and interact with my new buddy and
+                  faculties.
+                </p>
+                <span
+                  class="inline-flex gap-3 justify-center sm:justify-start w-full"
+                >
+                  <a
+                    class="text-gray-500 hover:text-blue-600 transition-colors bg-white p-2 rounded-lg shadow-sm border border-gray-100 flex items-center justify-center w-10 h-10"
+                    href="https://www.facebook.com/chandigarhuniversitygharuan/"
+                  >
+                    <i class="fa-brands fa-facebook-f text-lg"></i>
+                  </a>
+                  <a
+                    class="text-gray-500 hover:text-black transition-colors bg-white p-2 rounded-lg shadow-sm border border-gray-100 flex items-center justify-center w-10 h-10"
+                    href="https://twitter.com/Chandigarh_uni"
+                  >
+                    <i class="fa-brands fa-x-twitter text-lg"></i>
+                  </a>
+                  <a
+                    class="text-gray-500 hover:text-indigo-600 transition-colors bg-white p-2 rounded-lg shadow-sm border border-gray-100 flex items-center justify-center w-10 h-10"
+                    href="https://www.cuchd.in/"
+                  >
+                    <i class="fa-solid fa-globe text-lg"></i>
+                  </a>
+                </span>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- my certificates -->
-
-      <section class="text-gray-600 body-font">
-        <div class="container px-5 py-24 mx-auto flex flex-wrap">
-          <div class="flex w-full mb-20 flex-wrap">
-            <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 lg:w-1/3 lg:mb-0 mb-4">Small Achievements</h1>
-            <p class="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-base">As a student I always have a learning attitude. I am hunger of information and appreciation. I try my best to achieve what I wanna achieve. I am the competetor of myself.</p>
+    <!-- my certificates -->
+    <section class="bg-slate-50 border-y border-gray-100">
+      <div class="container px-5 py-24 mx-auto flex flex-wrap">
+        <div
+          class="flex w-full mb-16 flex-col md:flex-row md:items-end"
+          data-aos="fade-up"
+        >
+          <div class="md:w-1/3">
+            <h1
+              class="font-serif sm:text-4xl text-3xl font-bold text-gray-900 mb-4 md:mb-2"
+            >
+              Small Achievements
+            </h1>
+            <div class="h-1 w-20 bg-indigo-500 rounded mb-4 md:mb-0"></div>
           </div>
-          <div class="flex flex-wrap md:-m-2 -m-1">
-            <div class="flex flex-wrap w-1/2">
-              <div class="md:p-2 p-1 w-1/2">
-                <img alt="gallery" class="w-full object-cover h-full object-center block" src="./certificates/britti 1.jpg">
-              </div>
-
-              <div class="md:p-2 p-1 w-1/2">
-                <img alt="gallery" class="w-full object-cover h-full object-center block" src="./certificates/britti 2.jpg">
-              </div>
-              <div class="md:p-2 p-1 w-full">
-                <img alt="gallery" class="w-full h-full object-cover object-center block" src="./certificates/britti 3.jpg">
-              </div>
+          <p
+            class="md:w-2/3 md:pl-8 leading-relaxed text-lg text-gray-500 font-medium"
+          >
+            As a student I always have a learning attitude. I am hunger of
+            information and appreciation. I try my best to achieve what I wanna
+            achieve. I am the competetor of myself.
+          </p>
+        </div>
+        <div class="flex flex-wrap md:-m-2 -m-1">
+          <div class="flex flex-wrap w-1/2">
+            <div
+              class="md:p-2 p-1 w-1/2 overflow-hidden rounded-xl"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <img
+                alt="gallery"
+                class="w-full h-full object-cover object-center block rounded-xl hover:scale-105 transition-transform duration-500 cursor-pointer"
+                src="./certificates/britti 1.jpg"
+              />
             </div>
-            <div class="flex flex-wrap w-1/2">
-              <div class="md:p-2 p-1 w-full">
-                <img alt="gallery" class="w-full h-full object-cover object-center block" src="./certificates/britti 4.jpg">
-              </div>
-              <div class="md:p-2 p-1 w-1/2">
-                <img alt="gallery" class="w-full object-cover h-full object-center block" src="./certificates/Madhyamik Certificate.png">
-              </div>
-              <div class="md:p-2 p-1 w-1/2">
-                <img alt="gallery" class="w-full object-cover h-full object-center block" src="./certificates/WBHS CERTIFICATE.jpg">
-              </div>
+            <div
+              class="md:p-2 p-1 w-1/2 overflow-hidden rounded-xl"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+            >
+              <img
+                alt="gallery"
+                class="w-full h-full object-cover object-center block rounded-xl hover:scale-105 transition-transform duration-500 cursor-pointer"
+                src="./certificates/britti 2.jpg"
+              />
+            </div>
+            <div
+              class="md:p-2 p-1 w-full overflow-hidden rounded-xl"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+            >
+              <img
+                alt="gallery"
+                class="w-full h-full object-cover object-center block rounded-xl hover:scale-105 transition-transform duration-500 cursor-pointer"
+                src="./certificates/britti 3.jpg"
+              />
+            </div>
+          </div>
+          <div class="flex flex-wrap w-1/2">
+            <div
+              class="md:p-2 p-1 w-full overflow-hidden rounded-xl"
+              data-aos="zoom-in"
+              data-aos-delay="400"
+            >
+              <img
+                alt="gallery"
+                class="w-full h-full object-cover object-center block rounded-xl hover:scale-105 transition-transform duration-500 cursor-pointer"
+                src="./certificates/britti 4.jpg"
+              />
+            </div>
+            <div
+              class="md:p-2 p-1 w-1/2 overflow-hidden rounded-xl"
+              data-aos="zoom-in"
+              data-aos-delay="500"
+            >
+              <img
+                alt="gallery"
+                class="w-full h-full object-cover object-center block rounded-xl hover:scale-105 transition-transform duration-500 cursor-pointer"
+                src="./certificates/Madhyamik Certificate.png"
+              />
+            </div>
+            <div
+              class="md:p-2 p-1 w-1/2 overflow-hidden rounded-xl"
+              data-aos="zoom-in"
+              data-aos-delay="600"
+            >
+              <img
+                alt="gallery"
+                class="w-full h-full object-cover object-center block rounded-xl hover:scale-105 transition-transform duration-500 cursor-pointer"
+                src="./certificates/WBHS CERTIFICATE.jpg"
+              />
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- friends -->
-      <section class="text-gray-600 body-font">
-        <div class="container px-5 py-24 mx-auto">
-          <div class="flex flex-col text-center w-full mb-20">
-            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Meet My Friends ❤️</h1>
-            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Maybe that the radius of my friend circle is not well extended but according to centrifugal force in physics if the radius is small then the power of centrifugal force will be increased. They always inspire me.</p>
+    <!-- NEW SECTION: Favourite Quotes -->
+    <section class="bg-white border-b border-gray-100">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-col text-center w-full mb-16" data-aos="fade-up">
+          <h1
+            class="text-sm text-indigo-500 tracking-widest font-bold mb-2 uppercase"
+          >
+            Inspiration
+          </h1>
+          <h2
+            class="font-serif sm:text-4xl text-3xl font-bold mb-4 text-gray-900"
+          >
+            My Favourite Quotes
+          </h2>
+          <div class="h-1 w-20 bg-indigo-500 rounded mb-6 mx-auto"></div>
+          <p
+            class="lg:w-2/3 mx-auto leading-relaxed text-lg text-gray-500 font-medium"
+          >
+            Thoughts and philosophy on Computer Science, Life, and Building the
+            Future.
+          </p>
+        </div>
+
+        <!-- CSS Grid for Quotes to prevent any horizontal overflow -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Quote 1 -->
+          <div
+            class="bg-slate-50 border border-gray-100 p-10 rounded-2xl relative hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <i
+              class="fa-solid fa-quote-right text-4xl text-indigo-100 absolute top-6 right-6"
+            ></i>
+            <p
+              class="font-serif text-gray-700 italic text-xl leading-relaxed mb-6 mt-4 z-10 relative"
+            >
+              "Programs must be written for people to read, and only
+              incidentally for machines to execute."
+            </p>
+            <div class="flex items-center mt-auto">
+              <div class="h-10 w-1 bg-indigo-500 rounded-full mr-4"></div>
+              <h3
+                class="font-bold text-gray-900 uppercase tracking-wide text-sm"
+              >
+                Harold Abelson
+              </h3>
+            </div>
           </div>
 
+          <!-- Quote 2 -->
+          <div
+            class="bg-slate-50 border border-gray-100 p-10 rounded-2xl relative hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <i
+              class="fa-solid fa-quote-right text-4xl text-indigo-100 absolute top-6 right-6"
+            ></i>
+            <p
+              class="font-serif text-gray-700 italic text-xl leading-relaxed mb-6 mt-4 z-10 relative"
+            >
+              "Talk is cheap. Show me the code."
+            </p>
+            <div class="flex items-center mt-auto">
+              <div class="h-10 w-1 bg-indigo-500 rounded-full mr-4"></div>
+              <h3
+                class="font-bold text-gray-900 uppercase tracking-wide text-sm"
+              >
+                Linus Torvalds
+              </h3>
+            </div>
+          </div>
+
+          <!-- Quote 3 -->
+          <div
+            class="bg-slate-50 border border-gray-100 p-10 rounded-2xl relative hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <i
+              class="fa-solid fa-quote-right text-4xl text-indigo-100 absolute top-6 right-6"
+            ></i>
+            <p
+              class="font-serif text-gray-700 italic text-xl leading-relaxed mb-6 mt-4 z-10 relative"
+            >
+              "The only way to do great work is to love what you do."
+            </p>
+            <div class="flex items-center mt-auto">
+              <div class="h-10 w-1 bg-indigo-500 rounded-full mr-4"></div>
+              <h3
+                class="font-bold text-gray-900 uppercase tracking-wide text-sm"
+              >
+                Steve Jobs
+              </h3>
+            </div>
+          </div>
+
+          <!-- Quote 4 -->
+          <div
+            class="bg-slate-50 border border-gray-100 p-10 rounded-2xl relative hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <i
+              class="fa-solid fa-quote-right text-4xl text-indigo-100 absolute top-6 right-6"
+            ></i>
+            <p
+              class="font-serif text-gray-700 italic text-xl leading-relaxed mb-6 mt-4 z-10 relative"
+            >
+              "Any fool can write code that a computer can understand. Good
+              programmers write code that humans can understand."
+            </p>
+            <div class="flex items-center mt-auto">
+              <div class="h-10 w-1 bg-indigo-500 rounded-full mr-4"></div>
+              <h3
+                class="font-bold text-gray-900 uppercase tracking-wide text-sm"
+              >
+                Martin Fowler
+              </h3>
+            </div>
+          </div>
+
+          <!-- Quote 5 -->
+          <div
+            class="bg-slate-50 border border-gray-100 p-10 rounded-2xl relative hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
+            <i
+              class="fa-solid fa-quote-right text-4xl text-indigo-100 absolute top-6 right-6"
+            ></i>
+            <p
+              class="font-serif text-gray-700 italic text-xl leading-relaxed mb-6 mt-4 z-10 relative"
+            >
+              "The best time to plant a tree was 20 years ago. The second best
+              time is now."
+            </p>
+            <div class="flex items-center mt-auto">
+              <div class="h-10 w-1 bg-indigo-500 rounded-full mr-4"></div>
+              <h3
+                class="font-bold text-gray-900 uppercase tracking-wide text-sm"
+              >
+                Chinese Proverb
+              </h3>
+            </div>
+          </div>
+
+          <!-- Quote 6 -->
+          <div
+            class="bg-slate-50 border border-gray-100 p-10 rounded-2xl relative hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+            data-aos="fade-up"
+            data-aos-delay="600"
+          >
+            <i
+              class="fa-solid fa-quote-right text-4xl text-indigo-100 absolute top-6 right-6"
+            ></i>
+            <p
+              class="font-serif text-gray-700 italic text-xl leading-relaxed mb-6 mt-4 z-10 relative"
+            >
+              "Stay hungry, stay foolish."
+            </p>
+            <div class="flex items-center mt-auto">
+              <div class="h-10 w-1 bg-indigo-500 rounded-full mr-4"></div>
+              <h3
+                class="font-bold text-gray-900 uppercase tracking-wide text-sm"
+              >
+                Stewart Brand
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- friends -->
+    <section class="bg-slate-50 border-b border-gray-100">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-col text-center w-full mb-16" data-aos="fade-up">
+          <h1
+            class="font-serif sm:text-4xl text-3xl font-bold mb-4 text-gray-900"
+          >
+            Meet My Friends ❤️
+          </h1>
+          <div class="h-1 w-20 bg-indigo-500 rounded mb-6 mx-auto"></div>
+          <p
+            class="lg:w-2/3 mx-auto leading-relaxed text-lg text-gray-500 font-medium"
+          >
+            Maybe that the radius of my friend circle is not well extended but
+            according to centrifugal force in physics if the radius is small
+            then the power of centrifugal force will be increased. They always
+            inspire me.
+          </p>
+        </div>
+        <div class="flex flex-wrap -m-2">
           <!-- first row  -->
-          <div class="flex flex-wrap -m-2">
-            <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-              <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-                <img alt="Bama" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="./images/bama.jpg">
-                <div class="flex-grow">
-                  <h2 class="text-gray-900 title-font font-medium">Bama Charan Chhandogi</h2>
-                  <p class="text-gray-500">Engineer</p>
-                </div>
+          <div
+            class="p-2 lg:w-1/3 md:w-1/2 w-full"
+            data-aos="fade-up"
+            data-aos-delay="50"
+          >
+            <div
+              class="h-full flex items-center bg-white border-gray-100 shadow-sm border p-4 rounded-2xl hover:shadow-md hover:-translate-y-1 transition-all duration-300"
+            >
+              <img
+                alt="Bama"
+                class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 shadow-sm"
+                src="./images/bama.jpg"
+              />
+              <div class="flex-grow">
+                <h2 class="text-gray-900 font-bold font-serif text-lg">
+                  Bama Charan Chhandogi
+                </h2>
+                <p
+                  class="text-indigo-500 text-sm font-semibold tracking-wide uppercase mt-1"
+                >
+                  Engineer
+                </p>
               </div>
             </div>
-            <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-              <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-                <img alt="Sandipan" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="./images/sandipan.png">
-                <div class="flex-grow">
-                  <h2 class="text-gray-900 title-font font-medium">Sandipan Bera</h2>
-                  <p class="text-gray-500">Agriculturist</p>
-                </div>
-              </div>
-            </div>
-            <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-              <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-                <img alt="Nanda" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="./images/nanda.jpg">
-                <div class="flex-grow">
-                  <h2 class="text-gray-900 title-font font-medium">Nanda Dulal Das</h2>
-                  <p class="text-gray-500">Doctor</p>
-                </div>
-              </div>
-            </div>
-
-
-            <!-- second row in friends  -->
-
-            <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-              <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-                <img alt="Swastika" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="./images/swastika.jpg">
-                <div class="flex-grow">
-                  <h2 class="text-gray-900 title-font font-medium">Swastika Maity</h2>
-                  <p class="text-gray-500">Agriculturist</p>
-                </div>
-              </div>
-            </div>
-
-
-            <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-              <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-                <img alt="Daliya" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="./images/daliya.png">
-                <div class="flex-grow">
-                  <h2 class="text-gray-900 title-font font-medium">Daliya Roy ❤️</h2>
-                  <p class="text-gray-500">Athlete</p>
-                </div>
-              </div>
-            </div>
-            <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-              <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-                <img alt="Sayak" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="./images/sayak.jpg">
-                <div class="flex-grow">
-                  <h2 class="text-gray-900 title-font font-medium">Sayak Maity</h2>
-                  <p class="text-gray-500">Engineer</p>
-                </div>
-              </div>
-            </div>
-
-
-            <!-- third row  -->
-
-            <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-                <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-                  <img alt="Sourav" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="./images/sourav.jpg">
-                  <div class="flex-grow">
-                    <h2 class="text-gray-900 title-font font-medium">Sourav Jana</h2>
-                    <p class="text-gray-500">Doctor</p>
-                  </div>
-                </div>
-              </div>
-  
-  
-              <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-                <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-                  <img alt="Sudipta" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="./images/sudipta.jpg">
-                  <div class="flex-grow">
-                    <h2 class="text-gray-900 title-font font-medium">Sudipta Adhikari</h2>
-                    <p class="text-gray-500">Agriculturist</p>
-                  </div>
-                </div>
-              </div>
-              <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-                <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-                  <img alt="uday" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="./images/uday.jpg">
-                  <div class="flex-grow">
-                    <h2 class="text-gray-900 title-font font-medium">Uday Mura</h2>
-                    <p class="text-gray-500">Doctor</p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- 4th row  -->
-
-              <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-                <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-                  <img alt="Anupam" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="./images/anupam.jpg">
-                  <div class="flex-grow">
-                    <h2 class="text-gray-900 title-font font-medium">Anupam Sen</h2>
-                    <p class="text-gray-500">WBCS Officer</p>
-                  </div>
-                </div>
-              </div>
-  
-  
-              <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-                <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-                  <img alt="Sasmal" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="./images/sasmal.jpg">
-                  <div class="flex-grow">
-                    <h2 class="text-gray-900 title-font font-medium">Subhadip Sasmal</h2>
-                    <p class="text-gray-500">Hospital Management</p>
-                  </div>
-                </div>
-              </div>
-              <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-                <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-                  <img alt="Asish" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="./images/asish.jpg">
-                  <div class="flex-grow">
-                    <h2 class="text-gray-900 title-font font-medium">Asish Jana</h2>
-                    <p class="text-gray-500">Doctor</p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- 5th row  -->
-
-              <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-                <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-                  <img alt="Suvankar" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="./images/bhuski.jpg">
-                  <div class="flex-grow">
-                    <h2 class="text-gray-900 title-font font-medium">Suvankar Bera </h2>
-                    <p class="text-gray-500">Pharmasist</p>
-                  </div>
-                </div>
-              </div>
-  
-  
-              <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-                <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-                  <img alt="Bishop" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="./images/bishop.jpg">
-                  <div class="flex-grow">
-                    <h2 class="text-gray-900 title-font font-medium">Bishop Bera</h2>
-                    <p class="text-gray-500">Agriculturist</p>
-                  </div>
-                </div>
-              </div>
-              <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-                <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-                  <img alt="Nilu" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="./images/nilu.jpg">
-                  <div class="flex-grow">
-                    <h2 class="text-gray-900 title-font font-medium">Nilu Pramanik</h2>
-                    <p class="text-gray-500">Aquaculturist</p>
-                  </div>
-                </div>
-              </div>
-              <!-- 6th row  -->    
           </div>
-        </div>   
-      </section>
-
-      <!-- my memories -->
-
-      <section class="text-gray-600 body-font">
-        <div class="container px-5 py-24 mx-auto flex flex-wrap">
-          <div class="flex w-full mb-20 flex-wrap">
-            <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 lg:w-1/3 lg:mb-0 mb-4">Some Yaadein</h1>
-            <p class="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-base">Time and tide waits for none. So I take my phone and capture those moments which can't never get back. Memories are beautiful, beautifulmemories.</p>
-          </div>
-
-          <!-- first 6 pictures  -->
-
-          <div class="flex flex-wrap md:-m-2 -m-1">
-            <div class="flex flex-wrap w-1/2">
-              <div class="md:p-2 p-1 w-1/2">
-                <img alt="gallery" class="w-full object-cover h-full object-center block" src="./memories/memory 1.jpg">
-              </div>
-  
-              <div class="md:p-2 p-1 w-1/2">
-                <img alt="gallery" class="w-full object-cover h-full object-center block" src="./memories/memory 2.jpg">
-              </div>
-  
-              <div class="md:p-2 p-1 w-full">
-                <img alt="gallery" class="w-full h-full object-cover object-center block" src="./memories/memory 3.jpg">
+          <div
+            class="p-2 lg:w-1/3 md:w-1/2 w-full"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div
+              class="h-full flex items-center bg-white border-gray-100 shadow-sm border p-4 rounded-2xl hover:shadow-md hover:-translate-y-1 transition-all duration-300"
+            >
+              <img
+                alt="Sandipan"
+                class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 shadow-sm"
+                src="./images/sandipan.png"
+              />
+              <div class="flex-grow">
+                <h2 class="text-gray-900 font-bold font-serif text-lg">
+                  Sandipan Bera
+                </h2>
+                <p
+                  class="text-indigo-500 text-sm font-semibold tracking-wide uppercase mt-1"
+                >
+                  Agriculturist
+                </p>
               </div>
             </div>
-  
-            <div class="flex flex-wrap w-1/2">
-              <div class="md:p-2 p-1 w-full">
-                <img alt="gallery" class="w-full h-full object-cover object-center block" src="./memories/memory 4.jpg">
+          </div>
+          <div
+            class="p-2 lg:w-1/3 md:w-1/2 w-full"
+            data-aos="fade-up"
+            data-aos-delay="150"
+          >
+            <div
+              class="h-full flex items-center bg-white border-gray-100 shadow-sm border p-4 rounded-2xl hover:shadow-md hover:-translate-y-1 transition-all duration-300"
+            >
+              <img
+                alt="Nanda"
+                class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 shadow-sm"
+                src="./images/nanda.jpg"
+              />
+              <div class="flex-grow">
+                <h2 class="text-gray-900 font-bold font-serif text-lg">
+                  Nanda Dulal Das
+                </h2>
+                <p
+                  class="text-indigo-500 text-sm font-semibold tracking-wide uppercase mt-1"
+                >
+                  Doctor
+                </p>
               </div>
-  
-              <div class="md:p-2 p-1 w-1/2">
-                <img alt="gallery" class="w-full object-cover h-full object-center block" src="./memories/memory 5.jpg">
+            </div>
+          </div>
+          <!-- second row  -->
+          <div
+            class="p-2 lg:w-1/3 md:w-1/2 w-full"
+            data-aos="fade-up"
+            data-aos-delay="50"
+          >
+            <div
+              class="h-full flex items-center bg-white border-gray-100 shadow-sm border p-4 rounded-2xl hover:shadow-md hover:-translate-y-1 transition-all duration-300"
+            >
+              <img
+                alt="Swastika"
+                class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 shadow-sm"
+                src="./images/swastika.jpg"
+              />
+              <div class="flex-grow">
+                <h2 class="text-gray-900 font-bold font-serif text-lg">
+                  Swastika Maity
+                </h2>
+                <p
+                  class="text-indigo-500 text-sm font-semibold tracking-wide uppercase mt-1"
+                >
+                  Agriculturist
+                </p>
               </div>
-  
-              <div class="md:p-2 p-1 w-1/2">
-                <img alt="gallery" class="w-full object-cover h-full object-center block" src="./memories/memory 6.jpg">
+            </div>
+          </div>
+          <div
+            class="p-2 lg:w-1/3 md:w-1/2 w-full"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div
+              class="h-full flex items-center bg-white border-gray-100 shadow-sm border p-4 rounded-2xl hover:shadow-md hover:-translate-y-1 transition-all duration-300"
+            >
+              <img
+                alt="Daliya"
+                class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 shadow-sm"
+                src="./images/daliya.png"
+              />
+              <div class="flex-grow">
+                <h2 class="text-gray-900 font-bold font-serif text-lg">
+                  Daliya Roy ❤️
+                </h2>
+                <p
+                  class="text-indigo-500 text-sm font-semibold tracking-wide uppercase mt-1"
+                >
+                  Athlete
+                </p>
               </div>
+            </div>
+          </div>
+          <div
+            class="p-2 lg:w-1/3 md:w-1/2 w-full"
+            data-aos="fade-up"
+            data-aos-delay="150"
+          >
+            <div
+              class="h-full flex items-center bg-white border-gray-100 shadow-sm border p-4 rounded-2xl hover:shadow-md hover:-translate-y-1 transition-all duration-300"
+            >
+              <img
+                alt="Sayak"
+                class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 shadow-sm"
+                src="./images/sayak.jpg"
+              />
+              <div class="flex-grow">
+                <h2 class="text-gray-900 font-bold font-serif text-lg">
+                  Sayak Maity
+                </h2>
+                <p
+                  class="text-indigo-500 text-sm font-semibold tracking-wide uppercase mt-1"
+                >
+                  Engineer
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- third row  -->
+          <div
+            class="p-2 lg:w-1/3 md:w-1/2 w-full"
+            data-aos="fade-up"
+            data-aos-delay="50"
+          >
+            <div
+              class="h-full flex items-center bg-white border-gray-100 shadow-sm border p-4 rounded-2xl hover:shadow-md hover:-translate-y-1 transition-all duration-300"
+            >
+              <img
+                alt="Sourav"
+                class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 shadow-sm"
+                src="./images/sourav.jpg"
+              />
+              <div class="flex-grow">
+                <h2 class="text-gray-900 font-bold font-serif text-lg">
+                  Sourav Jana
+                </h2>
+                <p
+                  class="text-indigo-500 text-sm font-semibold tracking-wide uppercase mt-1"
+                >
+                  Doctor
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="p-2 lg:w-1/3 md:w-1/2 w-full"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div
+              class="h-full flex items-center bg-white border-gray-100 shadow-sm border p-4 rounded-2xl hover:shadow-md hover:-translate-y-1 transition-all duration-300"
+            >
+              <img
+                alt="Sudipta"
+                class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 shadow-sm"
+                src="./images/sudipta.jpg"
+              />
+              <div class="flex-grow">
+                <h2 class="text-gray-900 font-bold font-serif text-lg">
+                  Sudipta Adhikari
+                </h2>
+                <p
+                  class="text-indigo-500 text-sm font-semibold tracking-wide uppercase mt-1"
+                >
+                  Agriculturist
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="p-2 lg:w-1/3 md:w-1/2 w-full"
+            data-aos="fade-up"
+            data-aos-delay="150"
+          >
+            <div
+              class="h-full flex items-center bg-white border-gray-100 shadow-sm border p-4 rounded-2xl hover:shadow-md hover:-translate-y-1 transition-all duration-300"
+            >
+              <img
+                alt="uday"
+                class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 shadow-sm"
+                src="./images/uday.jpg"
+              />
+              <div class="flex-grow">
+                <h2 class="text-gray-900 font-bold font-serif text-lg">
+                  Uday Mura
+                </h2>
+                <p
+                  class="text-indigo-500 text-sm font-semibold tracking-wide uppercase mt-1"
+                >
+                  Doctor
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- 4th row  -->
+          <div
+            class="p-2 lg:w-1/3 md:w-1/2 w-full"
+            data-aos="fade-up"
+            data-aos-delay="50"
+          >
+            <div
+              class="h-full flex items-center bg-white border-gray-100 shadow-sm border p-4 rounded-2xl hover:shadow-md hover:-translate-y-1 transition-all duration-300"
+            >
+              <img
+                alt="Anupam"
+                class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 shadow-sm"
+                src="./images/anupam.jpg"
+              />
+              <div class="flex-grow">
+                <h2 class="text-gray-900 font-bold font-serif text-lg">
+                  Anupam Sen
+                </h2>
+                <p
+                  class="text-indigo-500 text-sm font-semibold tracking-wide uppercase mt-1"
+                >
+                  WBCS Officer
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="p-2 lg:w-1/3 md:w-1/2 w-full"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div
+              class="h-full flex items-center bg-white border-gray-100 shadow-sm border p-4 rounded-2xl hover:shadow-md hover:-translate-y-1 transition-all duration-300"
+            >
+              <img
+                alt="Sasmal"
+                class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 shadow-sm"
+                src="./images/sasmal.jpg"
+              />
+              <div class="flex-grow">
+                <h2 class="text-gray-900 font-bold font-serif text-lg">
+                  Subhadip Sasmal
+                </h2>
+                <p
+                  class="text-indigo-500 text-sm font-semibold tracking-wide uppercase mt-1"
+                >
+                  Hospital Management
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="p-2 lg:w-1/3 md:w-1/2 w-full"
+            data-aos="fade-up"
+            data-aos-delay="150"
+          >
+            <div
+              class="h-full flex items-center bg-white border-gray-100 shadow-sm border p-4 rounded-2xl hover:shadow-md hover:-translate-y-1 transition-all duration-300"
+            >
+              <img
+                alt="Asish"
+                class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 shadow-sm"
+                src="./images/asish.jpg"
+              />
+              <div class="flex-grow">
+                <h2 class="text-gray-900 font-bold font-serif text-lg">
+                  Asish Jana
+                </h2>
+                <p
+                  class="text-indigo-500 text-sm font-semibold tracking-wide uppercase mt-1"
+                >
+                  Doctor
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- 5th row  -->
+          <div
+            class="p-2 lg:w-1/3 md:w-1/2 w-full"
+            data-aos="fade-up"
+            data-aos-delay="50"
+          >
+            <div
+              class="h-full flex items-center bg-white border-gray-100 shadow-sm border p-4 rounded-2xl hover:shadow-md hover:-translate-y-1 transition-all duration-300"
+            >
+              <img
+                alt="Suvankar"
+                class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 shadow-sm"
+                src="./images/bhuski.jpg"
+              />
+              <div class="flex-grow">
+                <h2 class="text-gray-900 font-bold font-serif text-lg">
+                  Suvankar Bera
+                </h2>
+                <p
+                  class="text-indigo-500 text-sm font-semibold tracking-wide uppercase mt-1"
+                >
+                  Pharmasist
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="p-2 lg:w-1/3 md:w-1/2 w-full"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div
+              class="h-full flex items-center bg-white border-gray-100 shadow-sm border p-4 rounded-2xl hover:shadow-md hover:-translate-y-1 transition-all duration-300"
+            >
+              <img
+                alt="Bishop"
+                class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 shadow-sm"
+                src="./images/bishop.jpg"
+              />
+              <div class="flex-grow">
+                <h2 class="text-gray-900 font-bold font-serif text-lg">
+                  Bishop Bera
+                </h2>
+                <p
+                  class="text-indigo-500 text-sm font-semibold tracking-wide uppercase mt-1"
+                >
+                  Agriculturist
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="p-2 lg:w-1/3 md:w-1/2 w-full"
+            data-aos="fade-up"
+            data-aos-delay="150"
+          >
+            <div
+              class="h-full flex items-center bg-white border-gray-100 shadow-sm border p-4 rounded-2xl hover:shadow-md hover:-translate-y-1 transition-all duration-300"
+            >
+              <img
+                alt="Nilu"
+                class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 shadow-sm"
+                src="./images/nilu.jpg"
+              />
+              <div class="flex-grow">
+                <h2 class="text-gray-900 font-bold font-serif text-lg">
+                  Nilu Pramanik
+                </h2>
+                <p
+                  class="text-indigo-500 text-sm font-semibold tracking-wide uppercase mt-1"
+                >
+                  Aquaculturist
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- my memories (STRUCTURAL FIX PRESERVED) -->
+    <section class="bg-white border-b border-gray-100 overflow-hidden">
+      <div class="container px-5 py-24 mx-auto flex flex-wrap">
+        <div
+          class="flex w-full mb-16 flex-col md:flex-row md:items-end"
+          data-aos="fade-up"
+        >
+          <div class="md:w-1/3">
+            <h1
+              class="font-serif sm:text-4xl text-3xl font-bold text-gray-900 mb-4 md:mb-2"
+            >
+              Some Yaadein
+            </h1>
+            <div class="h-1 w-20 bg-indigo-500 rounded mb-4 md:mb-0"></div>
+          </div>
+          <p
+            class="md:w-2/3 md:pl-8 leading-relaxed text-lg text-gray-500 font-medium"
+          >
+            Time and tide waits for none. So I take my phone and capture those
+            moments which can't never get back. Memories are beautiful,
+            beautiful memories.
+          </p>
+        </div>
+
+        <!-- first 6 pictures  -->
+        <div
+          class="flex flex-wrap md:-m-2 -m-1 w-full"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+        >
+          <div class="flex flex-wrap w-1/2">
+            <div class="md:p-2 p-1 w-1/2 overflow-hidden rounded-xl">
+              <img
+                alt="gallery"
+                class="w-full h-full object-cover object-center block rounded-xl hover:scale-105 transition-transform duration-500 cursor-pointer"
+                src="./memories/memory 1.jpg"
+              />
+            </div>
+            <div class="md:p-2 p-1 w-1/2 overflow-hidden rounded-xl">
+              <img
+                alt="gallery"
+                class="w-full h-full object-cover object-center block rounded-xl hover:scale-105 transition-transform duration-500 cursor-pointer"
+                src="./memories/memory 2.jpg"
+              />
+            </div>
+            <div class="md:p-2 p-1 w-full overflow-hidden rounded-xl">
+              <img
+                alt="gallery"
+                class="w-full h-full object-cover object-center block rounded-xl hover:scale-105 transition-transform duration-500 cursor-pointer"
+                src="./memories/memory 3.jpg"
+              />
+            </div>
+          </div>
+          <div class="flex flex-wrap w-1/2">
+            <div class="md:p-2 p-1 w-full overflow-hidden rounded-xl">
+              <img
+                alt="gallery"
+                class="w-full h-full object-cover object-center block rounded-xl hover:scale-105 transition-transform duration-500 cursor-pointer"
+                src="./memories/memory 4.jpg"
+              />
+            </div>
+            <div class="md:p-2 p-1 w-1/2 overflow-hidden rounded-xl">
+              <img
+                alt="gallery"
+                class="w-full h-full object-cover object-center block rounded-xl hover:scale-105 transition-transform duration-500 cursor-pointer"
+                src="./memories/memory 5.jpg"
+              />
+            </div>
+            <div class="md:p-2 p-1 w-1/2 overflow-hidden rounded-xl">
+              <img
+                alt="gallery"
+                class="w-full h-full object-cover object-center block rounded-xl hover:scale-105 transition-transform duration-500 cursor-pointer"
+                src="./memories/memory 6.jpg"
+              />
             </div>
           </div>
         </div>
 
         <!-- second 6 pictures  -->
-
-        <div class="flex flex-wrap md:-m-2 -m-1">
+        <div
+          class="flex flex-wrap md:-m-2 -m-1 w-full mt-4"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+        >
           <div class="flex flex-wrap w-1/2">
-            <div class="md:p-2 p-1 w-1/2">
-              <img alt="gallery" class="w-full object-cover h-full object-center block" src="./memories/memory 7.jpg">
+            <div class="md:p-2 p-1 w-1/2 overflow-hidden rounded-xl">
+              <img
+                alt="gallery"
+                class="w-full h-full object-cover object-center block rounded-xl hover:scale-105 transition-transform duration-500 cursor-pointer"
+                src="./memories/memory 7.jpg"
+              />
             </div>
-
-            <div class="md:p-2 p-1 w-1/2">
-              <img alt="gallery" class="w-full object-cover h-full object-center block" src="./memories/memory 8.jpg">
+            <div class="md:p-2 p-1 w-1/2 overflow-hidden rounded-xl">
+              <img
+                alt="gallery"
+                class="w-full h-full object-cover object-center block rounded-xl hover:scale-105 transition-transform duration-500 cursor-pointer"
+                src="./memories/memory 8.jpg"
+              />
             </div>
-
-            <div class="md:p-2 p-1 w-full">
-              <img alt="gallery" class="w-full h-full object-cover object-center block" src="./memories/memory 9.jpg">
+            <div class="md:p-2 p-1 w-full overflow-hidden rounded-xl">
+              <img
+                alt="gallery"
+                class="w-full h-full object-cover object-center block rounded-xl hover:scale-105 transition-transform duration-500 cursor-pointer"
+                src="./memories/memory 9.jpg"
+              />
             </div>
           </div>
-
           <div class="flex flex-wrap w-1/2">
-            <div class="md:p-2 p-1 w-full">
-              <img alt="gallery" class="w-full h-full object-cover object-center block" src="./memories/memory 10.jpg">
+            <div class="md:p-2 p-1 w-full overflow-hidden rounded-xl">
+              <img
+                alt="gallery"
+                class="w-full h-full object-cover object-center block rounded-xl hover:scale-105 transition-transform duration-500 cursor-pointer"
+                src="./memories/memory 10.jpg"
+              />
             </div>
-
-            <div class="md:p-2 p-1 w-1/2">
-              <img alt="gallery" class="w-full object-cover h-full object-center block" src="./memories/memory 11.jpg">
+            <div class="md:p-2 p-1 w-1/2 overflow-hidden rounded-xl">
+              <img
+                alt="gallery"
+                class="w-full h-full object-cover object-center block rounded-xl hover:scale-105 transition-transform duration-500 cursor-pointer"
+                src="./memories/memory 11.jpg"
+              />
             </div>
+            <div class="md:p-2 p-1 w-1/2 overflow-hidden rounded-xl">
+              <img
+                alt="gallery"
+                class="w-full h-full object-cover object-center block rounded-xl hover:scale-105 transition-transform duration-500 cursor-pointer"
+                src="./memories/memory 12.jpg"
+              />
+            </div>
+          </div>
+        </div>
 
-            <div class="md:p-2 p-1 w-1/2">
-              <img alt="gallery" class="w-full object-cover h-full object-center block" src="./memories/memory 12.jpg">
+        <!-- third 6 pictures  -->
+        <div
+          class="flex flex-wrap md:-m-2 -m-1 w-full mt-4"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+        >
+          <div class="flex flex-wrap w-1/2">
+            <div class="md:p-2 p-1 w-1/2 overflow-hidden rounded-xl">
+              <img
+                alt="gallery"
+                class="w-full h-full object-cover object-center block rounded-xl hover:scale-105 transition-transform duration-500 cursor-pointer"
+                src="./memories/memory 13.jpg"
+              />
+            </div>
+            <div class="md:p-2 p-1 w-1/2 overflow-hidden rounded-xl">
+              <img
+                alt="gallery"
+                class="w-full h-full object-cover object-center block rounded-xl hover:scale-105 transition-transform duration-500 cursor-pointer"
+                src="./memories/memory 14.jpg"
+              />
+            </div>
+            <div class="md:p-2 p-1 w-full overflow-hidden rounded-xl">
+              <img
+                alt="gallery"
+                class="w-full h-full object-cover object-center block rounded-xl hover:scale-105 transition-transform duration-500 cursor-pointer"
+                src="./memories/memory 15.jpg"
+              />
+            </div>
+          </div>
+          <div class="flex flex-wrap w-1/2">
+            <div class="md:p-2 p-1 w-full overflow-hidden rounded-xl">
+              <img
+                alt="gallery"
+                class="w-full h-full object-cover object-center block rounded-xl hover:scale-105 transition-transform duration-500 cursor-pointer"
+                src="./memories/memory 16.jpg"
+              />
+            </div>
+            <div class="md:p-2 p-1 w-1/2 overflow-hidden rounded-xl">
+              <img
+                alt="gallery"
+                class="w-full h-full object-cover object-center block rounded-xl hover:scale-105 transition-transform duration-500 cursor-pointer"
+                src="./memories/memory 17.jpg"
+              />
+            </div>
+            <div class="md:p-2 p-1 w-1/2 overflow-hidden rounded-xl">
+              <img
+                alt="gallery"
+                class="w-full h-full object-cover object-center block rounded-xl hover:scale-105 transition-transform duration-500 cursor-pointer"
+                src="./memories/memory 18.jpg"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- fourth 6 pictures  -->
+        <div
+          class="flex flex-wrap md:-m-2 -m-1 w-full mt-4"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+        >
+          <div class="flex flex-wrap w-1/2">
+            <div class="md:p-2 p-1 w-1/2 overflow-hidden rounded-xl">
+              <img
+                alt="gallery"
+                class="w-full h-full object-cover object-center block rounded-xl hover:scale-105 transition-transform duration-500 cursor-pointer"
+                src="./memories/memory 19.jpeg"
+              />
+            </div>
+            <div class="md:p-2 p-1 w-1/2 overflow-hidden rounded-xl">
+              <img
+                alt="gallery"
+                class="w-full h-full object-cover object-center block rounded-xl hover:scale-105 transition-transform duration-500 cursor-pointer"
+                src="./memories/memory 20.jpg"
+              />
+            </div>
+            <div class="md:p-2 p-1 w-full overflow-hidden rounded-xl">
+              <img
+                alt="gallery"
+                class="w-full h-full object-cover object-center block rounded-xl hover:scale-105 transition-transform duration-500 cursor-pointer"
+                src="./memories/memory 21.jpg"
+              />
+            </div>
+          </div>
+          <div class="flex flex-wrap w-1/2">
+            <div class="md:p-2 p-1 w-full overflow-hidden rounded-xl">
+              <img
+                alt="gallery"
+                class="w-full h-full object-cover object-center block rounded-xl hover:scale-105 transition-transform duration-500 cursor-pointer"
+                src="./memories/memory 22.jpg"
+              />
+            </div>
+            <div class="md:p-2 p-1 w-1/2 overflow-hidden rounded-xl">
+              <img
+                alt="gallery"
+                class="w-full h-full object-cover object-center block rounded-xl hover:scale-105 transition-transform duration-500 cursor-pointer"
+                src="./memories/memory 23.jpg"
+              />
+            </div>
+            <div class="md:p-2 p-1 w-1/2 overflow-hidden rounded-xl">
+              <img
+                alt="gallery"
+                class="w-full h-full object-cover object-center block rounded-xl hover:scale-105 transition-transform duration-500 cursor-pointer"
+                src="./memories/memory 24.jpg"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- fifth 6 pictures  -->
+        <div
+          class="flex flex-wrap md:-m-2 -m-1 w-full mt-4"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+        >
+          <div class="flex flex-wrap w-1/2">
+            <div class="md:p-2 p-1 w-1/2 overflow-hidden rounded-xl">
+              <img
+                alt="gallery"
+                class="w-full h-full object-cover object-center block rounded-xl hover:scale-105 transition-transform duration-500 cursor-pointer"
+                src="./memories/memory 25.jpg"
+              />
+            </div>
+            <div class="md:p-2 p-1 w-1/2 overflow-hidden rounded-xl">
+              <img
+                alt="gallery"
+                class="w-full h-full object-cover object-center block rounded-xl hover:scale-105 transition-transform duration-500 cursor-pointer"
+                src="./memories/memory 26.jpg"
+              />
+            </div>
+            <div class="md:p-2 p-1 w-full overflow-hidden rounded-xl">
+              <img
+                alt="gallery"
+                class="w-full h-full object-cover object-center block rounded-xl hover:scale-105 transition-transform duration-500 cursor-pointer"
+                src="./memories/memory 27.jpg"
+              />
+            </div>
+          </div>
+          <div class="flex flex-wrap w-1/2">
+            <div class="md:p-2 p-1 w-full overflow-hidden rounded-xl">
+              <img
+                alt="gallery"
+                class="w-full h-full object-cover object-center block rounded-xl hover:scale-105 transition-transform duration-500 cursor-pointer"
+                src="./memories/memory 28.jpg"
+              />
+            </div>
+            <div class="md:p-2 p-1 w-1/2 overflow-hidden rounded-xl">
+              <img
+                alt="gallery"
+                class="w-full h-full object-cover object-center block rounded-xl hover:scale-105 transition-transform duration-500 cursor-pointer"
+                src="./memories/memory 29.jpg"
+              />
+            </div>
+            <div class="md:p-2 p-1 w-1/2 overflow-hidden rounded-xl">
+              <img
+                alt="gallery"
+                class="w-full h-full object-cover object-center block rounded-xl hover:scale-105 transition-transform duration-500 cursor-pointer"
+                src="./memories/memory 30.jpg"
+              />
             </div>
           </div>
         </div>
       </div>
+    </section>
 
-                    <!-- third 6 pictures  -->
-
-        <div class="flex flex-wrap md:-m-2 -m-1">
-          <div class="flex flex-wrap w-1/2">
-            <div class="md:p-2 p-1 w-1/2">
-              <img alt="gallery" class="w-full object-cover h-full object-center block" src="./memories/memory 13.jpg">
-            </div>
-
-            <div class="md:p-2 p-1 w-1/2">
-              <img alt="gallery" class="w-full object-cover h-full object-center block" src="./memories/memory 14.jpg">
-            </div>
-
-            <div class="md:p-2 p-1 w-full">
-              <img alt="gallery" class="w-full h-full object-cover object-center block" src="./memories/memory 15.jpg">
-            </div>
-          </div>
-
-          <div class="flex flex-wrap w-1/2">
-            <div class="md:p-2 p-1 w-full">
-              <img alt="gallery" class="w-full h-full object-cover object-center block" src="./memories/memory 16.jpg">
-            </div>
-
-            <div class="md:p-2 p-1 w-1/2">
-              <img alt="gallery" class="w-full object-cover h-full object-center block" src="./memories/memory 17.jpg">
-            </div>
-
-            <div class="md:p-2 p-1 w-1/2">
-              <img alt="gallery" class="w-full object-cover h-full object-center block" src="./memories/memory 18.jpg">
-            </div>
-          </div>
-        </div>
-      </div>
-
-                    <!-- fourth 6 pictures  -->
-
-        <div class="flex flex-wrap md:-m-2 -m-1">
-          <div class="flex flex-wrap w-1/2">
-            <div class="md:p-2 p-1 w-1/2">
-              <img alt="gallery" class="w-full object-cover h-full object-center block" src="./memories/memory 19.jpeg">
-            </div>
-
-            <div class="md:p-2 p-1 w-1/2">
-              <img alt="gallery" class="w-full object-cover h-full object-center block" src="./memories/memory 20.jpg">
-            </div>
-
-            <div class="md:p-2 p-1 w-full">
-              <img alt="gallery" class="w-full h-full object-cover object-center block" src="./memories/memory 21.jpg">
-            </div>
-          </div>
-
-          <div class="flex flex-wrap w-1/2">
-            <div class="md:p-2 p-1 w-full">
-              <img alt="gallery" class="w-full h-full object-cover object-center block" src="./memories/memory 22.jpg">
-            </div>
-
-            <div class="md:p-2 p-1 w-1/2">
-              <img alt="gallery" class="w-full object-cover h-full object-center block" src="./memories/memory 23.jpg">
-            </div>
-
-            <div class="md:p-2 p-1 w-1/2">
-              <img alt="gallery" class="w-full object-cover h-full object-center block" src="./memories/memory 24.jpg">
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-            <!-- fifth 6 pictures  -->
-
-        <div class="flex flex-wrap md:-m-2 -m-1">
-          <div class="flex flex-wrap w-1/2">
-            <div class="md:p-2 p-1 w-1/2">
-              <img alt="gallery" class="w-full object-cover h-full object-center block" src="./memories/memory 25.jpg">
-            </div>
-
-            <div class="md:p-2 p-1 w-1/2">
-              <img alt="gallery" class="w-full object-cover h-full object-center block" src="./memories/memory 26.jpg">
-            </div>
-
-            <div class="md:p-2 p-1 w-full">
-              <img alt="gallery" class="w-full h-full object-cover object-center block" src="./memories/memory 27.jpg">
-            </div>
-          </div>
-
-          <div class="flex flex-wrap w-1/2">
-            <div class="md:p-2 p-1 w-full">
-              <img alt="gallery" class="w-full h-full object-cover object-center block" src="./memories/memory 28.jpg">
-            </div>
-
-            <div class="md:p-2 p-1 w-1/2">
-              <img alt="gallery" class="w-full object-cover h-full object-center block" src="./memories/memory 29.jpg">
-            </div>
-
-            <div class="md:p-2 p-1 w-1/2">
-              <img alt="gallery" class="w-full object-cover h-full object-center block" src="./memories/memory 30.jpg">
-            </div>
-
-          </div>
-        </div>
-      </div>
-      </section>
-
-     <!-- contact me  -->
-      <!-- footer  -->
-
-      <footer class="text-gray-600 body-font">
-        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
-          <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-            
-
-            <span class="ml-3 text-xl">Bhowmik's Spot</span>
-          </a>
-          <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2022 Made with ❤️ —
-            <a href="https://github.com/subhadipbhowmik" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">by Shubhadip Bhowmik</a>
+    <!-- NEW SECTION: Find Me Online (Social Links & Portfolios) -->
+    <section id="connect" class="bg-slate-50 py-24">
+      <div class="container px-5 mx-auto">
+        <div class="flex flex-col text-center w-full mb-12" data-aos="fade-up">
+          <h1
+            class="text-sm text-indigo-500 tracking-widest font-bold mb-2 uppercase"
+          >
+            Connect
+          </h1>
+          <h2
+            class="font-serif sm:text-4xl text-3xl font-bold mb-4 text-gray-900"
+          >
+            Find Me Online
+          </h2>
+          <div class="h-1 w-20 bg-indigo-500 rounded mx-auto mb-6"></div>
+          <p
+            class="lg:w-2/3 mx-auto leading-relaxed text-lg text-gray-500 font-medium"
+          >
+            Explore my work, code, and socials across the web.
           </p>
-          <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-            <a class="text-gray-500" href="https://www.facebook.com/shubhadip.bhaumik">
-              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-              </svg>
-            </a>
-            <a class="ml-3 text-gray-500" href="https://www.twitter.com/myselfshubhadip/">
-              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-              </svg>
-            </a>
-            <a class="ml-3 text-gray-500" href="https://www.instagram.com/shubhadipbhowmik/">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-              </svg>
-            </a>
-            <a class="ml-3 text-gray-500" href="https://in.linkedin.com/in/shubhadip-bhowmik">
-              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
-                <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
-                <circle cx="4" cy="4" r="2" stroke="none"></circle>
-              </svg>
-            </a>
-            <a class="ml-3 text-gray-500" href="https://wa.me/917550814404?text=Hi">
-              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
-            </a>
-          </span>
         </div>
-      </footer>
-    
-</body>
+
+        <!-- Grid prevents horizontal overflow by nature -->
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 max-w-6xl mx-auto"
+        >
+          <!-- Portfolio -->
+          <a
+            href="https://shubhadipbhowmik.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex items-center gap-4 p-4 bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-md hover:border-indigo-200 hover:-translate-y-1 transition-all duration-300 group"
+            data-aos="fade-up"
+            data-aos-delay="50"
+          >
+            <div
+              class="w-12 h-12 flex items-center justify-center bg-indigo-50 text-indigo-600 rounded-lg group-hover:bg-indigo-600 group-hover:text-white transition-colors"
+            >
+              <i class="fa-solid fa-briefcase text-xl"></i>
+            </div>
+            <span class="font-bold text-gray-800 tracking-wide">Portfolio</span>
+          </a>
+
+          <!-- Qurexo -->
+          <a
+            href="https://www.qurexo.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex items-center gap-4 p-4 bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-md hover:border-blue-200 hover:-translate-y-1 transition-all duration-300 group"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div
+              class="w-12 h-12 flex items-center justify-center bg-blue-50 text-blue-600 rounded-lg group-hover:bg-blue-600 group-hover:text-white transition-colors"
+            >
+              <i class="fa-solid fa-globe text-xl"></i>
+            </div>
+            <span class="font-bold text-gray-800 tracking-wide">Qurexo</span>
+          </a>
+
+          <!-- GitHub -->
+          <a
+            href="https://github.com/subhadipbhowmik"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex items-center gap-4 p-4 bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-md hover:border-gray-300 hover:-translate-y-1 transition-all duration-300 group"
+            data-aos="fade-up"
+            data-aos-delay="150"
+          >
+            <div
+              class="w-12 h-12 flex items-center justify-center bg-gray-100 text-gray-800 rounded-lg group-hover:bg-gray-800 group-hover:text-white transition-colors"
+            >
+              <i class="fa-brands fa-github text-2xl"></i>
+            </div>
+            <span class="font-bold text-gray-800 tracking-wide">GitHub</span>
+          </a>
+
+          <!-- LinkedIn -->
+          <a
+            href="https://www.linkedin.com/in/shubhadip-bhowmik/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex items-center gap-4 p-4 bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-md hover:border-blue-200 hover:-translate-y-1 transition-all duration-300 group"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div
+              class="w-12 h-12 flex items-center justify-center bg-blue-50 text-blue-700 rounded-lg group-hover:bg-blue-700 group-hover:text-white transition-colors"
+            >
+              <i class="fa-brands fa-linkedin-in text-2xl"></i>
+            </div>
+            <span class="font-bold text-gray-800 tracking-wide">LinkedIn</span>
+          </a>
+
+          <!-- Email -->
+          <a
+            href="mailto:shubhadipbhowmikdev@gmail.com"
+            class="flex items-center gap-4 p-4 bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-md hover:border-red-200 hover:-translate-y-1 transition-all duration-300 group"
+            data-aos="fade-up"
+            data-aos-delay="250"
+          >
+            <div
+              class="w-12 h-12 flex items-center justify-center bg-red-50 text-red-500 rounded-lg group-hover:bg-red-500 group-hover:text-white transition-colors"
+            >
+              <i class="fa-solid fa-envelope text-xl"></i>
+            </div>
+            <span class="font-bold text-gray-800 tracking-wide">Email Me</span>
+          </a>
+
+          <!-- YouTube -->
+          <a
+            href="https://www.youtube.com/@shubhadipbhowmik/videos"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex items-center gap-4 p-4 bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-md hover:border-red-200 hover:-translate-y-1 transition-all duration-300 group"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div
+              class="w-12 h-12 flex items-center justify-center bg-red-50 text-red-600 rounded-lg group-hover:bg-red-600 group-hover:text-white transition-colors"
+            >
+              <i class="fa-brands fa-youtube text-xl"></i>
+            </div>
+            <span class="font-bold text-gray-800 tracking-wide">YouTube</span>
+          </a>
+
+          <!-- Pinterest -->
+          <a
+            href="https://pinterest.com/shubhadip_bhaumik/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex items-center gap-4 p-4 bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-md hover:border-red-200 hover:-translate-y-1 transition-all duration-300 group"
+            data-aos="fade-up"
+            data-aos-delay="350"
+          >
+            <div
+              class="w-12 h-12 flex items-center justify-center bg-red-50 text-red-600 rounded-lg group-hover:bg-red-600 group-hover:text-white transition-colors"
+            >
+              <i class="fa-brands fa-pinterest-p text-xl"></i>
+            </div>
+            <span class="font-bold text-gray-800 tracking-wide">Pinterest</span>
+          </a>
+
+          <!-- Twitter / X -->
+          <a
+            href="https://twitter.com/myselfshubhadip"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex items-center gap-4 p-4 bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-md hover:border-gray-300 hover:-translate-y-1 transition-all duration-300 group"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div
+              class="w-12 h-12 flex items-center justify-center bg-gray-100 text-gray-900 rounded-lg group-hover:bg-gray-900 group-hover:text-white transition-colors"
+            >
+              <i class="fa-brands fa-x-twitter text-xl"></i>
+            </div>
+            <span class="font-bold text-gray-800 tracking-wide"
+              >Twitter / X</span
+            >
+          </a>
+
+          <!-- Figma -->
+          <a
+            href="https://www.figma.com/@shubhadip_dev"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex items-center gap-4 p-4 bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-md hover:border-pink-200 hover:-translate-y-1 transition-all duration-300 group"
+            data-aos="fade-up"
+            data-aos-delay="450"
+          >
+            <div
+              class="w-12 h-12 flex items-center justify-center bg-pink-50 text-pink-500 rounded-lg group-hover:bg-pink-500 group-hover:text-white transition-colors"
+            >
+              <i class="fa-brands fa-figma text-xl"></i>
+            </div>
+            <span class="font-bold text-gray-800 tracking-wide">Figma</span>
+          </a>
+
+          <!-- Buy Me a Coffee -->
+          <a
+            href="https://buymeacoffee.com/shubhadipbhowmik"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex items-center gap-4 p-4 bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-md hover:border-yellow-200 hover:-translate-y-1 transition-all duration-300 group"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
+            <div
+              class="w-12 h-12 flex items-center justify-center bg-yellow-50 text-yellow-600 rounded-lg group-hover:bg-yellow-500 group-hover:text-white transition-colors"
+            >
+              <i class="fa-solid fa-mug-hot text-xl"></i>
+            </div>
+            <span class="font-bold text-gray-800 tracking-wide"
+              >Buy Me A Coffee</span
+            >
+          </a>
+
+          <!-- Product Hunt -->
+          <a
+            href="https://www.producthunt.com/@shubhadip_bhowmik"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex items-center gap-4 p-4 bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-md hover:border-orange-200 hover:-translate-y-1 transition-all duration-300 group sm:col-span-2 lg:col-span-1"
+            data-aos="fade-up"
+            data-aos-delay="550"
+          >
+            <div
+              class="w-12 h-12 flex items-center justify-center bg-orange-50 text-orange-600 rounded-lg group-hover:bg-orange-500 group-hover:text-white transition-colors"
+            >
+              <i class="fa-brands fa-product-hunt text-xl"></i>
+            </div>
+            <span class="font-bold text-gray-800 tracking-wide"
+              >Product Hunt</span
+            >
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer  -->
+    <footer class="bg-white text-gray-600 border-t border-gray-100">
+      <div
+        class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col"
+      >
+        <a
+          class="flex font-serif font-bold items-center md:justify-start justify-center text-gray-900 gap-2"
+        >
+          <div class="p-1.5 bg-indigo-600 text-white rounded-md shadow-sm">
+            <i class="fa-solid fa-wand-magic-sparkles text-sm"></i>
+          </div>
+          <span class="text-xl tracking-tight">Bhowmik's Spot</span>
+        </a>
+        <p
+          class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l sm:border-gray-200 sm:py-2 sm:mt-0 mt-4 font-semibold"
+        >
+          © 2022 Made with ❤️ -
+          <a
+            href="https://github.com/subhadipbhowmik"
+            class="text-indigo-600 hover:text-indigo-800 ml-1 transition-colors"
+            rel="noopener noreferrer"
+            target="_blank"
+            >by Shubhadip Bhowmik</a
+          >
+        </p>
+        <span
+          class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start items-center gap-5"
+        >
+          <!-- Website -->
+          <a
+            href="https://qurexo.com"
+            aria-label="Website"
+            class="text-gray-400 hover:text-indigo-600 hover:-translate-y-1 transition-all duration-300"
+          >
+            <i class="fa-solid fa-globe text-xl"></i>
+          </a>
+          <!-- WhatsApp -->
+          <a
+            href="https://wa.me/917550814404?text=Hi"
+            aria-label="WhatsApp"
+            class="text-gray-400 hover:text-green-500 hover:-translate-y-1 transition-all duration-300"
+          >
+            <i class="fa-brands fa-whatsapp text-xl"></i>
+          </a>
+          <!-- Email -->
+          <a
+            href="mailto:shubhadipbhowmikdev@gmail.com"
+            aria-label="Email"
+            class="text-gray-400 hover:text-red-500 hover:-translate-y-1 transition-all duration-300"
+          >
+            <i class="fa-solid fa-envelope text-xl"></i>
+          </a>
+        </span>
+      </div>
+    </footer>
+
+    <!-- Initialize AOS Animations -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true, // Animations happen only once while scrolling down
+        offset: 100, // Offset (in px) from the original trigger point
+        duration: 600, // Duration of the animation
+        easing: "ease-in-out-sine", // Easing pattern
+      });
+    </script>
+
+    <!-- Mobile Menu Toggle Script -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const btn = document.getElementById("mobile-menu-btn");
+        const menu = document.getElementById("mobile-menu");
+        const icon = btn.querySelector("i");
+
+        btn.addEventListener("click", () => {
+          // Toggle the 'hidden' class to show/hide the menu
+          menu.classList.toggle("hidden");
+          menu.classList.toggle("flex");
+
+          // Toggle icon between hamburger and 'X'
+          if (menu.classList.contains("hidden")) {
+            icon.className = "fa-solid fa-bars text-2xl";
+          } else {
+            icon.className = "fa-solid fa-xmark text-2xl text-indigo-600";
+          }
+        });
+      });
+    </script>
+  </body>
 </html>
-
-
